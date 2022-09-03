@@ -1,0 +1,171 @@
+<section  id="item">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img
+                  src="assets/assets/images/20943593.jpg"
+                  alt="Sample photo" 
+                  class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"
+                   
+                />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase">verify your business as a buyer</h3>
+                  <form class="form account-details-form" [formGroup]="uploadform" (ngSubmit)="buyerregister()">
+                  <div class="row"> 
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label>Shop Name</label>
+                        <input type="text" id="form3Example1m" class="form-control form-control-lg" name="shopname" formControlName="shopname" placeholder="Shop name" />
+                        <div *ngIf="uploadform.get('shopname').invalid && uploadform.get('shopname').touched" class="error">SHOPNAME REQURED **</div> 
+                   
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label>Shop Owner Name</label>
+                        <input type="text" id="form3Example1n" class="form-control form-control-lg" name="shopownername" formControlName="shopownername" placeholder="Shop owner name" />
+                        <div *ngIf="uploadform.get('shopownername').invalid && uploadform.get('shopownername').touched" class="error">SHOPOWNER NAME REQUIRED **</div> 
+                   
+                      </div>
+                    </div>
+                  </div>
+  
+                  
+                    
+                      <div class="form-outline mb-4">
+                        <label>GSTIN No.</label>
+                        <input type="text" id="form3Example1n1" class="form-control form-control-lg" name="Gstcertificate" formControlName="Gstcertificate" placeholder="GSTIN No" />
+                       
+                      </div>
+                  
+                    
+                  
+  
+                  <div class="form-outline mb-4">
+                    <label>Businesspancard No.</label>
+                    <input type="text" id="form3Example8" class="form-control form-control-lg" name="businesspancardno" formControlName="businesspancardno"  placeholder="Business PAN card no" />
+                    <div class="" *ngIf="uploadform.get('businesspancardno').invalid && uploadform.get('businesspancardno').touched">
+                      <div class="error" *ngIf="uploadform.get('businesspancardno').errors.required">PANCARD  NUMBER IS REQUIRED **
+                      </div>
+                      <div  class="error" *ngIf="uploadform.get('businesspancardno').errors.pattern">ENTER A VALID PANCARD NUMBER **</div>
+                  </div>  </div>
+  
+                  
+                  
+                   
+                  
+                  <div class="row">
+
+                    
+                    <div class="col-md-6 mb-4">
+                      
+                        <div class="form-outline">
+                    <label>Udyamregistrationcertificate</label>
+                    <input type="file" id="form3Example9" class="form-control form-control-lg" name="udyamregistrationcertificate" (change)=selectimages($event) placeholder="Udyam registration certificate" />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                      
+                    <div class="form-outline">
+                <label>Postal Code</label>
+                <input type="text" id="form3Example9" class="form-control form-control-lg" name="pincode" formControlName="pincode" placeholder="Pincode" />
+                <div *ngIf="uploadform.get('pincode').invalid && uploadform.get('pincode').touched" class="text-danger">PINCODE REQUIRED **</div> 
+               </div>
+              </div>
+              </div>
+              <div class="row">
+
+                    
+                <div class="col-md-6 mb-4">
+                  
+                    <div class="form-outline">   
+                    <label> Business Type </label>
+                      <select type="text" id="form3Example90" class="form-control form-control-lg" name="typeofbusiness" formControlName="typeofbusiness" placeholder="Type of business" >
+                        <option >Choose..</option>
+                        <option >Wholesaler</option>
+                        <option >Manufacturer</option>
+                        <option >Trader</option> 
+                        <option >Distributor</option> 
+                        
+                     </select>
+                     <div *ngIf="uploadform.get('typeofbusiness').invalid && uploadform.get('typeofbusiness').touched" class="error">BUSINESS TYPE REQURED **</div> 
+                   
+                  </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                      
+                    <div class="form-outline">
+                <label>Reference Code</label>
+                <input type="text" id="form3Example9" class="form-control form-control-lg"   />
+                </div>
+              </div>
+                  <div class="row">
+
+                    
+                    <div class="col-md-6 mb-4">
+                      
+                        <div class="form-outline">
+                          <label>Front Side Photo Of The Shop</label>
+                          <input type="file" id="form3Example1m1" class="form-control form-control-lg" name="frontsidephoto" (change)=selectimage1($event)  />
+                         
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label>Back Side Photo Of The Shop</label>
+                        <input type="file" id="form3Example1m1" class="form-control form-control-lg" name="backsidephoto" (change)=selectimages2($event)   />
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label>Left Side Photo Of The Shop</label>
+                        <input type="file" id="form3Example1m1" class="form-control form-control-lg"  name="leftsidephoto" (change)=selectimages3($event) />
+                       
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label>Right Side Photo Of The Shop</label>
+                        <input type="file" id="form3Example1m1" class="form-control form-control-lg" name="rightsidephoto"  (change)=selectimage4($event) />
+                      
+                      </div>
+                    </div>
+                    
+                  </div>
+    
+             
+                  </div>
+  
+                  
+               
+  
+                  
+     
+                 
+                  <div class="d-flex justify-content-end pt-3">
+                     
+                    <button  class="btn btn-danger" type="submit">Submit</button>
+                  </div>
+  
+                </form>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>

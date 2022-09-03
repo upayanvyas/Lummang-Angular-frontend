@@ -1,0 +1,66 @@
+.product-image{
+    height: 434px;
+}
+
+#wishlist{
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+   margin-left: -2px;
+    
+}
+#login{
+    height: 123px;
+    width: 123px;
+    margin-left: 43%;
+}
+
+button{
+    width: 19px;
+}
+
+#product-media{
+    height: 45px;
+}
+
+.limitTextHeight {
+    height: 26px;
+    overflow: hidden;
+}
+body{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #212121;
+}
+
+.product-title{
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    color: #001325;
+    padding-bottom: 0.25rem;
+}
+main{
+    font-family: inherit;
+}
+.product-price{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #001325;
+}
+
+#product{
+    height: 232px;
+}
+
+.product-name{
+    text-align: center;
+    font-family: inherit;
+}
+.page-wrapper{
+    font-family: inherit;
+}

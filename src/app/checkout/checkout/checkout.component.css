@@ -1,0 +1,156 @@
+#emptycheckout{
+    height: 123px;
+    width: 123px;
+    margin-left: 43%;
+
+}
+#login{
+    height: 123px;
+    width: 123px;
+    margin-left: 43%;
+}
+
+.form-group{
+    font-size: 14px;
+}
+.coupon-toggle{
+   font-size: 14px;
+}
+.show-coupon{
+    color: palevioletred;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+img{
+    height: 100%;
+    width: 53px;
+}
+.bag-details-box .item .details .product-name {
+    line-height: 1.14;
+    padding-bottom: 3.5px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    background-color: #f3f3f3;
+    color: #3f414d;
+}
+body {
+    margin: 0;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+body {
+    background-color: #f3f3f3;
+    color: #3f414d;
+}
+body {
+    font-family: "Inter",sans-serif !important;
+    font-size: 16px;
+    line-height: 1.42857;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+
+html {
+    -webkit-font-smoothing: inherit !important;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    -webkit-font-smoothing: inherit !important;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+* ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+* ::-webkit-scrollbar-thumb {
+    background: #6d6a6a;
+}
+* ::-webkit-scrollbar-thumb {
+    background: #6d6a6a;
+}
+* ::-webkit-scrollbar-track {
+    background: #e1e1e1;
+}
+* ::-webkit-scrollbar-track {
+    background: #e1e1e1;
+}
+#text{
+   
+   
+    overflow-x: hidden;
+   
+    
+}
+#text{
+   
+    
+    
+    overflow-y: scroll;
+        height: 250px;
+        overflow-x: hidden;
+
+     
+ }
+ 

@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="tab-pane mb-4" id="account-orders"  *ngIf="user">
+        <div class="icon-box icon-box-side icon-box-light">
+            
+        </div>
+    
+        <table class="shop-table account-orders-table mb-6">
+            
+            <thead>
+                <tr>
+                    <th class="order-id">Product Id</th> 
+                    
+                    <th class="order-status">SKU</th>
+                    <th class="order-date">Created On</th>
+                    <th class="order-total">Product Name</th>
+                    <th class="order-actions">Status</th>
+                    <th class="order-actions">Action</th>
+                </tr>
+            </thead>
+            
+            <tbody *ngFor="let data of items">
+                <tr>
+                    <td><b>{{data._id}}</b></td>
+                    <td class="order-date"><b>{{data.sku}}</b></td>
+                    
+                    <td class="order-status"><b>{{data.createdOn}}</b></td>
+                     
+                    <td class="order-date"><b>{{data.itemname}}</b></td>
+                    
+                    <td class="order-total">
+                        <span class="order-price"><b>{{data.QCStatus}}</b></span>
+                        
+                        
+                    </td>
+                    <td class="row">
+    
+                                <button class="confirm-delete badge badge-danger"  type="submit" class="btn" (click)="removeitem(data._id)"><i class="fas fa-trash"></i></button>
+    
+                                <a class="badge badge-success"    type="submit" class="btn"><i class="fas fa-edit"></i></a>
+                                <a class="badge badge-success" href="itemview/{{data._id}}"  type="submit" class="btn"><i class="fas fa-eye"></i></a>
+                           
+              
+                    </td>
+                </tr>
+              
+            </tbody> 
+        </table>
+     
+    </div>   
+    
+    <div *ngIf="!user" id="logo2" >
+        <div class="page-content error-404">
+            <div class="container">
+                <div class="banner">
+                    <figure>
+                        <img src="../../../assets/assets/images/login.png" alt="Error 404"  
+                           id="login" />
+                    </figure>
+                    <div class="banner-content text-center">
+                        <h2 class="banner-title">
+                            <span class="text-secondary"></span> PLEASE LOG IN !
+                        </h2>
+                        <p class="text-dark">Login to view items</p>
+                        <a href="signup" class="btn btn-dark btn-rounded btn-icon-right">Login<i class="w-icon-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+          
+    
+      </div> 
+    </div>
+    

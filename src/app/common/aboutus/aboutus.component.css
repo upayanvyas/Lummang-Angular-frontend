@@ -1,0 +1,79 @@
+.page-header{
+    height: 200px;
+}
+#banner{
+    height: 509px;
+}
+/** header **/
+
+
+.header-middle{
+    max-height: 10px;
+   }
+
+   .btn-rounded{
+color: #3734A9;
+   }
+
+   .btn-outline{
+    border-color: #3734A9;
+    color: #3734A9;
+    width: 125px;
+   }
+   .btn-rounded:hover{
+    background: #3734A9;
+    color: white;
+
+}
+
+#aboutus{
+    height: 30px;
+width: 86px;
+left: 816px;
+top: 31px;
+border-radius: nullpx;
+
+font-size: 13px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+
+@font-face{
+    font-family: 'poppins' ;
+    src: url('../../../assets/Poppins-Medium.ttf');
+}
+#aboutus{
+    font-family: poppins;
+}
+
+#signin{
+    height: 36px;
+width: 122px;
+left: 943px;
+top: 23px;
+border-radius: 200px;
+padding: 8px, 44px, 8px, 44px;
+
+}
+#getapp{
+    height: 36px;
+width: 153px;
+left: 1136px;
+top: 23px;
+border-radius: 200px;
+padding: 8px, 44px, 8px, 44px;
+
+}
+#text{
+  
+font-family: poppins;
+font-size: 13px;
+
+}
+#gettheapp{
+    font-family: poppins;
+    font-size: 13px; 
+}

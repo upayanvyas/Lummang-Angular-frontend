@@ -1,0 +1,228 @@
+
+
+body{
+    font-family: inherit;
+}
+.coupon-toggle{
+    font-size: 14px;
+ }
+ .show-coupon{
+     color: palevioletred;
+ }
+ 
+ input{
+     border-top: none;
+     border-left: none;
+     border-right: none;
+ }
+ 
+ img{
+     height: 100%;
+     width: 53px;
+ }
+ .bag-details-box .item .details .product-name {
+     line-height: 1.14;
+     padding-bottom: 3.5px;
+ }
+ *, *::before, *::after {
+     box-sizing: border-box;
+ }
+ * {
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+ }
+ * {
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+ }
+ * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ user agent stylesheet
+ div {
+     display: block;
+ }
+ body {
+     background-color: #f3f3f3;
+     color: #3f414d;
+ }
+ body {
+     margin: 0;
+     color: #212529;
+     text-align: left;
+     background-color: #fff;
+ }
+ body {
+     background-color: #f3f3f3;
+     color: #3f414d;
+ }
+ body {
+     font-family: "Inter",sans-serif !important;
+     font-size: 16px;
+     line-height: 1.42857;
+     color: #333;
+     background-color: #fff;
+ }
+ :root {
+     --green: #5cd285;
+     --grey-border: #ebebeb;
+     --main-color: #3f414d;
+     --nykaa-pink: #fc2779;
+     --red: #f00;
+     --white: #fff;
+     --blue: blue;
+ }
+ :root {
+     --re-primary-color: #fc2779;
+     --re-rating-green-bcg: #5cd285;
+     --re-rating-orange-bcg: #fa6400;
+     --re-rating-red-bcg: #e02020;
+     --re-verified-circle: #ffd3e4;
+     --re-veirfied-check: #ff5295;
+     --re-white: #fff;
+     --re-black: #000;
+     --re-black-4d: #3f414d;
+     --re-black-1b: #1b1b1b;
+     --re-black-3a: #3a3a3a;
+     --re-black-33: #333;
+     --re-black-47: #474747;
+     --re-black-20: #231f20;
+     --re-grey-ee: #eee;
+     --re-grey-75: #757575;
+     --re-grey-eb: #ebebeb;
+     --re-grey-94: #8c8d94;
+     --re-grey-f6: #f6f6f6;
+ }
+ :root {
+     --nykaa-pink: #fc2779;
+     --main-color: #3f414d;
+     --green: #5cd285;
+     --grey-border: #ebebeb;
+     --light-grey: #ebebeb;
+     --steel: #8c8d94;
+     --white: #fff;
+     --red: red;
+     --blue: #00f;
+ }
+ :root {
+     --nykaa-pink: #fc2779;
+     --main-color: #3f414d;
+     --green: #5cd285;
+     --grey-border: #ebebeb;
+     --steel: #8c8d94;
+     --white: #fff;
+     --red: #f00;
+     --blue: blue;
+ }
+ :root {
+     --re-primary-color: #fc2779;
+     --re-rating-green-bcg: #5cd285;
+     --re-rating-orange-bcg: #fa6400;
+     --re-rating-red-bcg: #E02020;
+     --re-verified-circle: #FFD3E4;
+     --re-verified-check: #FF5295;
+     --re-selected-row: rgba(232,0,113,0.04);
+     --re-snow-200: #F9FAFA;
+     --re-header-text: #001325;
+     --re-white: #ffffff;
+     --re-black: #000000;
+     --re-black-4d: #3f414d;
+     --re-black-1b: #1b1b1b;
+     --re-black-3a: #3a3a3a;
+     --re-black-33: #333333;
+     --re-black-47: #474747;
+     --re-black-20: #231f20;
+     --re-grey-ee: #eeeeee;
+     --re-grey-75: #757575;
+     --re-grey-eb: #ebebeb;
+     --re-grey-94: #8c8d94;
+     --re-grey-f6: #f6f6f6;
+ }
+ :root {
+     --nykaa-pink: #fc2779;
+     --main-color: #3f414d;
+     --green: #5cd285;
+     --grey-border: #ebebeb;
+     --light-grey: #ebebeb;
+     --steel: #8c8d94;
+     --white: #fff;
+     --red: #f00;
+     --blue: blue;
+ }
+ html {
+     -webkit-font-smoothing: inherit !important;
+ }
+ html {
+     line-height: 1.15;
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+     -ms-overflow-style: scrollbar;
+     -webkit-tap-highlight-color: transparent;
+ }
+ html {
+     -webkit-font-smoothing: inherit !important;
+ }
+ html {
+     font-size: 10px;
+     -webkit-tap-highlight-color: transparent;
+ }
+ html {
+     -ms-text-size-adjust: 100%;
+     -webkit-text-size-adjust: 100%;
+ }
+ *, *::before, *::after {
+     box-sizing: border-box;
+ }
+ *:before, *:after {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ *, *::before, *::after {
+     box-sizing: border-box;
+ }
+ *:before, *:after {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ * ::-webkit-scrollbar {
+     width: 6px;
+     height: 6px;
+ }
+ * ::-webkit-scrollbar {
+     width: 6px;
+     height: 6px;
+ }
+ * ::-webkit-scrollbar-thumb {
+     background: #6d6a6a;
+ }
+ * ::-webkit-scrollbar-thumb {
+     background: #6d6a6a;
+ }
+ * ::-webkit-scrollbar-track {
+     background: #e1e1e1;
+ }
+ * ::-webkit-scrollbar-track {
+     background: #e1e1e1;
+ }
+ #text{
+    
+    
+     overflow-x: hidden;
+    
+     
+ }
+ #text{
+    
+     
+     
+     overflow-y: scroll;
+         height: 250px;
+         overflow-x: hidden;
+ 
+      
+  }
+  

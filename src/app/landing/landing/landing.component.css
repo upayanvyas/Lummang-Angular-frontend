@@ -1,0 +1,1085 @@
+/** header **/
+
+
+.header-middle{
+    max-height: 10px;
+   }
+
+   .btn-rounded{
+color: #3734A9;
+   }
+
+   .btn-outline{
+    border-color: #3734A9;
+    color: #3734A9;
+    width: 125px;
+   }
+   .btn-rounded:hover{
+    background: #3734A9;
+    color: white;
+
+}
+
+#aboutus{
+    height: 30px;
+width: 86px;
+left: 816px;
+top: 31px;
+border-radius: nullpx;
+
+font-size: 13px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+
+@font-face{
+    font-family: 'poppins' ;
+    src: url('../../../assets/Poppins-Medium.ttf');
+}
+#aboutus{
+    font-family: poppins;
+}
+
+#signin{
+    height: 36px;
+width: 122px;
+left: 943px;
+top: 23px;
+border-radius: 200px;
+padding: 8px, 44px, 8px, 44px;
+
+}
+#getapp{
+    height: 36px;
+width: 153px;
+left: 1136px;
+top: 23px;
+border-radius: 200px;
+padding: 8px, 44px, 8px, 44px;
+
+}
+#text{
+  
+font-family: poppins;
+font-size: 13px;
+
+}
+#gettheapp{
+    font-family: poppins;
+    font-size: 13px; 
+}
+
+/** body1 **/
+
+.intro-section{
+   
+    width: 100%;
+    height: 570px;
+    left: 0px;
+    top: 0px;
+    
+    background: #F7FCFF;
+    } 
+
+    @font-face{
+        font-family: 'manrope' ;
+        src: url('../../../assets/static/Manrope-Bold.ttf');
+    }
+    .banner-subtitle{
+        font-family: manrope;
+    }
+    .banner-subtitle{
+        height: 180px;
+width: 665px;
+left: 100px;
+top: 189px;
+border-radius: nullpx;
+font-family: Manrope;
+font-size: 40px;
+font-weight: 800;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: left;
+
+         }
+          
+    #img1{
+      height: 300px;
+width: 969px;
+margin-left: 264px;
+margin-top: -169px;
+border-radius: 0px;
+
+       
+      }
+      #button{
+        height: 63px;
+        width: 209px;
+        left: 100px;
+        margin-top: 9px;
+        border-radius: 200px;
+        padding: 16px, 40px, 16px, 40px;
+        background: #3734A9;
+       color: white; 
+        
+      }
+      #register{
+        height: 30px;
+        width: 127px;
+        left: 40px;
+        
+        border-radius: nullpx;
+        font-family: Poppins;
+font-size: 18px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: -0.02em;
+text-align: left;
+
+
+      }
+
+      #img{
+        height: 16px;
+        width: 36px;
+      }
+
+
+      /** body1 **/
+      .intro-section2{
+      
+
+background: #F5F5F5;
+      }
+      #button1{
+        width: 596px;
+        height: 165px;
+        border-top-right-radius: 67px;
+        border-bottom-right-radius:67px ;
+        color: #D7EFFE;
+        border-width: 14px; 
+        border-left: none;
+        border: 24px solid #D7EFFE;
+        border-left: none;
+      }
+      #buttoncontent{
+        font-family: Manrope;
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: left;
+        height: 120px;
+width: 400px;
+margin-left: 90px;
+top: 60px;
+border-radius: nullpx;
+color: black;
+
+       
+      }
+
+      @font-face{
+        font-family: 'Roboto' ;
+        src: url('../../../assets/Roboto-Medium.ttf');
+    }
+      #steps{
+          padding: 7px;
+        height: 16px;
+        width: 66px;
+        left: 0px;
+        top: 236px;
+        border-radius: undefinedpx;
+        font-family: Roboto;
+font-size: 14px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
+        
+      }
+      #head{
+        font-family: Poppins;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        height: 108px;
+width: 272px;
+left: 0px;
+top: 264px;
+border-radius: nullpx;
+
+      }
+      @font-face{
+        font-family: 'roboto' ;
+        src: url('../../../assets/Roboto-Regular.ttf');
+    }
+      #paragraph{
+        height: 48px;
+        width: 250px;
+        left: 0px;
+        top: 394px;
+        border-radius: nullpx;
+        font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+      }
+      .intro-section3{
+   background: #FFFFFF;
+    
+   
+   margin-top: -100px;
+width: 1440px;
+left: 0px;
+top: 1664px;
+border-radius: 0px;
+
+
+}
+
+#categories{
+    height: 220px;
+    width: 226px;
+    left: 512px;
+    top: 0px;
+  
+border-top-left-radius: 67px;
+    border-bottom-right-radius: 78px;
+ 
+}
+
+@font-face{
+    font-family: 'poppins' ;
+    src: url('../../../assets/Poppins-Medium.ttf');
+}
+#card-title{
+    height: 34px;
+width: 212px;
+left: 12px;
+
+border-radius: nullpx;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 34px;
+letter-spacing: -0.03em;
+text-align: left;
+
+    
+}
+@font-face{
+    font-family: 'roboto' ;
+    src: url('../../../assets/Roboto-Light.ttf');
+}
+#card-text{
+    font-family: Roboto;
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+height: 44px;
+width: 212px;
+left: 12px;
+
+border-radius: nullpx;
+
+}
+
+#categoryimage{
+    height: 58.254791259765625px;
+width: 55.585105895996094px;
+margin-left: 70px;
+margin-top: 25px;
+border-radius: 0px;
+
+}
+#button2{
+    border: 24px solid #E5E5E5;
+    background: white;
+    width: 456px;
+     height: 215px;
+      border-top-right-radius: 97px;
+      border-bottom-right-radius:97px ;
+     border-width: 14px; border-left: none;
+
+}
+@font-face{
+    font-family: 'manrope' ;
+    src: url('../../../assets/static/Manrope-Bold.ttf');
+}
+
+  #buttoncontent1{
+    height: 210px;
+width: 300px;
+margin-left: 100px;
+margin-top: 16px;
+border-radius: nullpx;
+font-family: Manrope;
+font-size: 32px;
+font-weight: 800;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#button3{
+    border: 24px solid #FFDCD2;
+    width: 486px; height: 205px; border-top-right-radius: 97px;border-bottom-right-radius:97px ;
+    margin-top: 50rem;
+  }
+  #card2{
+    height: 445px;
+   
+   width: 240px;
+  }
+  #card2:hover{
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+  
+  }
+  .intro-section4{
+   
+    width: 100%;
+    left: 0px;
+    
+   
+    
+    border-radius: 0px;
+    background: linear-gradient(335.03deg, #EDF5FF 28.48%, rgba(246, 248, 255, 0.5) 78.98%);
+    
+   }
+  .col{
+    padding-bottom: .7rem;
+  }
+  #img2{
+    height: 74.987274169921875px;
+width: 75px;
+margin-left: 83px;
+margin-top: 23.0001220703125px;
+border-radius: 0px;
+
+  }
+  #image{
+    height: 54.987274169921875px;
+    width: 55px;
+    margin-left: 83px;
+    margin-top: 23.0001220703125px;
+    border-radius: 0px;
+
+  }
+  .card{
+    height: 386px;
+    border-radius: 12px;
+  }
+  
+  #cardhead{
+    height: 88px;
+    width: 228px;
+    left: 14px;
+    top: 100px;
+    border-radius: nullpx;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -0.03em;
+    text-align: left;
+        
+  }
+  #buttoncontent3{
+    height: 240px;
+    width: 340px;
+    margin-left: 70px;
+    top: 60px;
+    border-radius: nullpx;
+    font-family: Manrope;
+font-size: 32px;
+font-weight: 800;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: left;
+
+    
+  }
+  .bannertitle{
+    height: 140px;
+width: 625px;
+left: 239px;
+top: 150px;
+border-radius: undefinedpx;
+font-family: Manrope;
+font-size: 48px;
+font-weight: 800;
+line-height: 70px;
+letter-spacing: -0.03em;
+text-align: center;
+color: white;
+}
+#download{
+    
+
+    height: 52px;;
+    width: 190px;
+    margin-left: 17px;
+   
+    border-radius: 200px;
+
+    
+
+}
+#button6{
+    height: 46px;
+    width: 160px;
+    left: 75px;
+    top: 442.33349609375px;
+    border-radius: 200px;
+    padding: 16px, 40px, 16px, 40px;
+    
+
+}
+
+
+#google{
+    height: 52.02099800109863px;
+width: 180px;
+left: 0px;
+top: 52.02099609375px;
+border-radius: 0px;
+margin-left: -29px;
+
+}
+.icon-box-title{
+    font-family: Manrope;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 70px;
+}
+#footer-newsletter{
+    height: 906px;
+   
+}
+#shop-default-banner{
+  margin-top: -110px;
+}
+.shop-default-banner{
+  height: 678px;
+ 
+}
+.banner-title{
+  height: 140px;
+width: 625px;
+left: 239px;
+top: 150px;
+border-radius: undefinedpx;
+font-family: Manrope;
+font-size: 38px;
+font-weight: 800;
+line-height: 70px;
+letter-spacing: -0.03em;
+text-align: center;
+
+}
+.btngetstarted{
+  height: 56px;
+  width: 163px;
+  left: 75px;
+  top: 442.33349609375px;
+  border-radius: 200px;
+  padding: 16px, 40px, 16px, 40px;
+  background:#3734A9;color: white ;
+  border-radius: 40px;
+  border: none;
+}
+#getstarted{
+  font-family: Poppins;
+font-size: 15px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+#button7{
+  font-family: Poppins;
+font-size: 15px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+/**
+.widget-title{
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+@font-face{
+  font-family: 'roboto1' ;
+  src: url('../../../assets/Roboto-Regular.ttf');
+}
+.widget-body{
+  font-family: roboto1;
+font-size: 16px;
+font-weight: 400;
+
+
+}
+**/
+
+#phone{
+  margin-top: -68px;
+  margin-left: 269px;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .banner-subtitle{
+    height: 152px;
+    width: 328px;
+    left: 16px;
+    top: 100px;
+    border-radius: nullpx;
+    font-family: Manrope;
+font-size: 26px;
+font-weight: 800;
+line-height: 38px;
+letter-spacing: 0em;
+text-align: center;
+
+    
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #button{
+    height: 56px;
+    width: 178px;
+    margin-left: 61px;
+    margin-top: -22px;
+    border-radius: 200px;
+    padding: 6px, 18px, 6px, 18px;
+    
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #img1{
+    height: 100.61919403076172px;
+width: 325px;
+margin-left: 7px;
+margin-top: 18px;
+top: 354px;
+border-radius: 0px;
+
+
+    
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #button1{
+    height: 202px;
+width: 346px;
+left: -34px;
+top: 557px;
+border-top-right-radius: 110px;
+border-bottom-right-radius: 110px;
+border-radius: [object Object]px;
+padding: 50px, 40px, 50px, 50px;
+
+    
+
+    
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #buttoncontent{
+    height: 72px;
+    width: 256px;
+    margin-left: 10px;
+    top: 50px;
+    border-radius: nullpx;
+    font-family: Manrope;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+        
+
+
+    
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #steps{
+    height: 16px;
+    width: 76px;
+    left: 0px;
+    top: 236px;
+    border-radius: nullpx;
+    
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    
+
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #button2{
+    height: 172px;
+width: 326px;
+left: -34px;
+top: 1999px;
+border-radius: [object Object]px;
+padding: 50px, 40px, 50px, 50px;
+
+    
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #buttoncontent1{
+    height: 72px;
+width: 266px;
+margin-left: 10px;
+top: 50px;
+border-radius: nullpx;
+font-family: Manrope;
+font-size: 26px;
+font-weight: 800;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+
+        
+    
+
+  }
+}
+@media screen and (max-width: 600px) {
+  #categories{
+    height: 240px;
+width: 236px;
+left: 0px;
+top: 0px;
+border-radius: [object Object]px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #button3{
+    height: 244px;
+width: 326px;
+left: -34px;
+margin-top: 27px;
+border-top-right-radius: 129px;
+border-bottom-right-radius: 129px;
+padding: 50px, 40px, 50px, 50px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #buttoncontent3{
+    height: 124px;
+    width: 246px;
+    margin-left: 30px;
+    margin-top: -10px;
+    border-radius: nullpx;
+    font-family: Manrope;
+font-size: 26px;
+font-weight: 800;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #card2{
+    height: 390px;
+    width: 296px;
+    margin-left: 36px;
+    top: 0px;
+    border-radius: 8px;
+    padding: 0px, 14px, 14px, 14px;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #shop-default-banner{
+    height: 342px;
+width: 408px;
+margin-left: -19px;
+
+  }
+}
+#imagetitle{
+  margin-left: 200px; margin-top: -85px;
+}
+
+@media screen and (max-width: 600px) {
+  #imagetitle{
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 800;
+line-height: 22px;
+letter-spacing: -0.03em;
+text-align: center;
+height: 44px;
+width: 214px;
+margin-left: 73px;
+margin-top: -12px;
+border-radius: nullpx;
+
+
+    
+  }
+}
+
+
+
+#footerbanner{
+  background: #6066B9B0;
+        height: 322.9992370605469px;
+  width: 1200px;
+  left: 0px;
+  margin-top:-106px;
+  
+}
+#footerbannercontent{
+  height: 140px;
+                            width: 472px;
+                            left: 79px;
+                            top: 286px;
+                            border-radius: nullpx;
+                            
+  letter-spacing: -0.03em;
+  text-align: left;
+
+}
+@media screen and (max-width: 600px) {
+  #footerbanner{
+    background: #6066B9B0;
+    height: 120px;
+    width: 420px;
+    margin-left: -6px;
+    top: 5445.00244140625px;
+    border-radius: [object Object]px;
+    
+  }
+}
+@media screen and (max-width: 600px) {
+  #footerbannercontent{
+    height: 40px;
+    width: 160px;
+    margin-left: -137px;
+    margin-top: -19px;
+    border-radius: nullpx;
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    text-align: left;
+        
+  }
+}
+@media screen and (max-width: 600px) {
+  #btngetstarted{
+    height: 30px;
+width: 122px;
+left: 37px;
+
+border-radius: 200px;
+padding: 4px, 12px, 4px, 12px;
+
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #getstarted{
+    height: 0px;
+    width: 45px;
+    left: 12px;
+    top: 9px;
+    border-radius: nullpx;
+    font-family: Poppins;
+font-size: 8px;
+font-weight: 500;
+letter-spacing: -0.02em;
+text-align: left;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  #button7{
+    height: 11px;
+    width: 18px;
+    left: 28px;
+  margin-top: 9px;
+    border-radius: undefinedpx;
+    font-family: Poppins;
+font-size: 8px;
+font-weight: 500;
+line-height: 12px;
+letter-spacing: -0.02em;
+text-align: left;
+
+    
+}
+}
+@media screen and (max-width: 600px) {
+  #img{
+    height: 12px;
+width: 12px;
+left: 58px;
+top: 4px;
+border-radius: 0px;
+
+  }
+}
+#ecplice{
+  margin-top: -65px; height: 38px;
+}
+#ecplice1{
+  margin-top: 12px;
+}
+#ecplice3{
+  margin-top: -39px;
+}
+@media screen and (max-width: 600px) {
+  #ecplice3{
+    height: 12.803845405578624px;
+width: 12.007604598999038px;
+margin-left: -350px;
+top: 5448.001953125px;
+border-radius: 0px;
+
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #ecplice4{
+    height: 16.554466247558608px;
+    width: 15.524984359741229px;
+    margin-left: -30px;
+    top: 5450.7509765625px;
+    border-radius: 0px;
+    
+  }
+}
+@media screen and (max-width: 600px) {
+  #phone{
+    height: 130.4268035888672px;
+width: 99.5986557006836px;
+margin-left: 267px;
+margin-top: -136px;
+border-radius: [object Object]px;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  #download{
+    height: 30.714141845703125px;
+width: 107px;
+left: 317px;
+margin-top: -2px;
+border-radius: 200px;
+
+
+  }
+}
+@media screen and (max-width: 600px) {
+  #icon{
+    height: 7.057656645774841px;
+    width: 8.672297596931458px;
+    left: 10.2412109375px;
+    top: 10.693359375px;
+    border-radius: 0px;
+    
+
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #footer-newsletter{
+    height: 378px;
+
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro-section{
+    height: 458px;
+    
+    left: 0px;
+    top: 49px;
+    border-radius: 0px;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #head{
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+letter-spacing: -0.03em;
+text-align: left;
+height: 36px;
+width: 299px;
+margin-left: 8px;
+top: 264px;
+border-radius: nullpx;
+
+    
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #paragraph{
+    height: 72px;
+    width: 328px;
+    margin-left: 8px;
+    top: 304px;
+    border-radius: nullpx;
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro-section2{
+    height: 1592px;
+
+left: 0px;
+top: 507px;
+border-radius: 0px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #register{
+    height: 30px;
+    width: 102px;
+    left: 18px;
+    
+    border-radius: nullpx;
+    
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #img{
+   height: 34px;
+width: 34px;
+left: 126px;
+top: 6px;
+border-radius: 0px;
+
+
+    
+
+  }
+}
+
+
+  @media screen and (max-width: 600px) {
+    #img{
+      height: 12px;
+  width: 12px;
+  left: 58px;
+  top: 4px;
+  border-radius: 0px;
+  
+    }
+
+}
+
+#imgarrow{
+  height: 34px;
+  width: 34px;
+  left: 159px;
+  top: 16px;
+  border-radius: 0px;
+  
+}
+
+@media screen and (max-width: 600px) {
+  #img{
+    height: 12px;
+width: 12px;
+left: 58px;
+top: 4px;
+border-radius: 0px;
+
+  }
+
+}
+@media screen and (max-width: 600px) {
+  #cate{
+   margin-top: -129px;
+
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .intro-section3{
+   height: 478px;
+
+  }
+
+}

@@ -1,0 +1,44 @@
+#imgg{
+
+    height: 163px;
+    
+}
+
+
+#img{
+    height: 230px;
+}
+#img1{
+    height: 215px;
+}
+#img2{
+    height: 120px;
+}
+.category-name{
+    color: white;
+}
+#banner2{
+    background-color: white;
+    margin-top: -60px;
+}
+#banner3{
+    margin-top: -57px;
+}
+#slider{
+    height: 432px;
+}
+#login{
+    height: 123px;
+    width: 123px;
+    margin-left: 43%;
+}
+body{
+    font-family: inherit;
+}
+#imageslider{
+    height: 300px;
+    width: 100%;
+}
+#top6offer{
+    height: 123px;
+}

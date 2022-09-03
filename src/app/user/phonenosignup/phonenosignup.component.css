@@ -1,0 +1,37 @@
+ 
+#buyer{
+   padding: 5px;
+   
+    
+}
+
+.container{
+    width: 423px;
+    
+   
+}
+
+.error{
+    color: red;
+    font-size: 9px;
+}
+@media screen and (min-width: 768px){
+    .container {
+      
+        padding-top: 18px !important;
+        padding-bottom: -128px !important;
+        margin-bottom: -90px;
+        height:100% ;
+        font-family: inter-regular;
+        
+    } 
+}
+#sign-in{
+    height: 700px;
+}
+input{
+    text-align: center;
+    border: 1px solid var(--red);
+    font-size: 14px;
+}
+

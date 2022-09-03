@@ -1,0 +1,125 @@
+
+
+<body>
+    <app-header></app-header>
+    <div class="page-wrapper">
+        <!-- Start of Header -->
+       
+
+        <!-- Start of Main -->
+        <main class="main wishlist-page">
+            <!-- Start of Page Header -->
+            <div class="page-header">
+                <div class="container">
+                    <h1 class="page-title mb-0">Wishlist</h1>
+                </div>
+            </div>
+            <!-- End of Page Header -->
+
+            <!-- Start of Breadcrumb -->
+            <nav class="breadcrumb-nav mb-10" style="margin-top: -25px;">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="home">Home</a></li>
+                        <li>Wishlist</li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End of Breadcrumb -->
+
+            <!-- Start of PageContent -->
+            <div class="page-content">
+                <div class="container" *ngIf="wishlist.length>0">
+                   
+                    <table class="shop-table wishlist-table" style="margin-top: -49px;">
+                        <thead>
+                            <tr>
+                                <th class="product-name"><span>Product</span></th>
+                                <th></th>
+                                <th class="product-price"><span>Product Name</span></th>
+                                <th class="product-stock-status"><span>Price</span></th>
+                                <th class="wishlist-action">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of wishlist">
+                                <td class="product-thumbnail">
+                                    <div class="p-relative"> 
+                                        <a href="itemdetails/{{data.itemid._id}}">
+                                            <figure>
+                                                <img src="https://demo22.appman.in/{{data.itemid.coverphoto[0].coverphoto[0].filename}}" alt="product" width="300"
+                                                    height="338">
+                                            </figure>
+                                        </a>
+                                        <button type="submit" class="btn btn-close"><i
+                                                class="fas fa-times" (click)="deletewishlist(data._id)"></i></button>
+                                    </div> 
+                                </td>
+                                <td class="product-name">
+                                    
+                                </td>
+                                <td class="product-price">
+                                    <ins class="new-price"> {{data.itemid.itemname}}</ins>
+                                </td>
+                                <td class="product-stock-status">
+                                    <span class="wishlist-in-stock">{{data.itemid.price | currency:'INR'}}</span>
+                                </td>
+                                <td class="wishlist-action">
+                                    <div class="d-lg-flex">
+                                        <a  href="itemdetails/{{data.itemid._id}}"
+                                            class="btn btn-quickview btn-outline btn-default btn-rounded btn-sm mb-2 mb-lg-0">Quick
+                                            View</a>
+                                        
+                                    </div>
+                                </td>
+                            </tr> 
+                          
+                        </tbody>
+                    </table>
+                   
+                </div>
+
+                <div *ngIf="wishlist.length==0"  role="alert">
+                    <div class="page-content error-404">
+                        <div class="container">
+                            <div class="banner">
+                                <figure>
+                                    <img src="../../../assets/assets/images/wishlist.png" alt="Error 404"  
+                                       id="emptywishlist" />
+                                </figure>
+                                <div class="banner-content text-center">
+                                    <h2 class="banner-title">
+                                        <span class="text-secondary">Hey,</span> your wishlist is empty !
+                                    </h2>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <!-- End of PageContent -->
+        </main>
+        <!-- End of Main -->
+
+       
+    </div>
+    <!-- End of Page Wrapper -->
+
+    
+    <!-- Start of Scroll Top -->
+    <a id="scroll-top" class="scroll-top" href="#top" title="Top" role="button"> <i class="w-icon-angle-up"></i> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70"> <circle id="progress-indicator" fill="transparent" stroke="#000000" stroke-miterlimit="10" cx="35" cy="35" r="34" style="stroke-dasharray: 16.4198, 400;"></circle> </svg> </a>
+    <!-- End of Scroll Top -->
+
+    <!-- Start of Mobile Menu -->
+    
+    <!-- End of Mobile Menu -->
+
+    <!-- Start of Quick View -->
+   
+    <!-- End of Quick view -->
+
+    <!-- Plugin JS File -->
+    
+</body>
+<app-footer></app-footer>

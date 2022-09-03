@@ -1,0 +1,8 @@
+{
+    "/api/":{
+        "target":"https://demo22.appman.in/api/",
+        "secure":false,
+        "changeOrigin":true,
+        "logLevel":"info"
+    }
+} 

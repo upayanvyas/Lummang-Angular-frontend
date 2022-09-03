@@ -1,0 +1,125 @@
+
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img 
+                  src="assets/assets/images/20943593.jpg"
+                  alt="Sample photo"
+                  class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"
+                  
+                />
+              </div>
+             
+              <div class="col-xl-6">
+               
+                <div class="card-body p-md-5 text-black">
+
+                 
+                  <h3 class="mb-5 text-uppercase">update your business as a Seller</h3>
+                  <form class="form account-details-form" [formGroup]=" editprofile" (ngSubmit)="updateuser()">
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label>Company Name *</label>
+                        <input type="text" id="form3Example1m" class="form-control " formControlName="companyname" name="companyname"   placeholder="Company Name" />
+                          </div>
+                    </div>
+                    <div class="col-md-6 mb-4"> 
+                      <div class="form-outline">
+                        <label>Company Owner Name *</label>
+                        <input type="text" id="form3Example1n" formControlName="companyownername" name="companyownername"  class="form-control form-control-lg" placeholder="Company Owner Name" />
+                      </div>
+                    </div> 
+                  </div> 
+  
+                  <div class="form-outline mb-4">
+                    <label>Businesspancard No.  *</label> 
+                    <input type="text" id="form3Example8"   formControlName="businesspancardno"  name="businesspancardno" class="form-control form-control-lg" placeholder="Business PAN Card No" />
+                     </div>
+   
+                  <div class="form-outline mb-4">
+                    <label>GST Certificate No. *</label>
+                    <input type="text" id="form3Example8"    formControlName="Gstcertificate" name="Gstcertificate" class="form-control form-control-lg" placeholder="GST Certificate" />
+                   
+                  </div>
+  
+                  <div class="form-outline mb-4">
+                    <label>Udyam Registration Certificate *</label>
+                    <input type="file" id="form3Example9"  formControlName="udyamregistrationcertificate"  name="udyamregistrationcertificate" class="form-control form-control-lg" placeholder="Udyam Registration Certificate No." />
+                   
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <label>Current Account Number *</label>
+                    <input type="number" id="form3Example9"  name="currentaccountno" formControlName="currentaccountno" class="form-control form-control-lg" placeholder="Current Account Number" />
+                  </div>  
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <label>Ifsc code *</label>
+                      <input type="text" id="form3Example1m" class="form-control form-control-lg" name="IFsc" formControlName="IFsc"   placeholder="Ifsc code" />
+                        </div>
+                  </div>
+                </div>
+                  <div class="row">
+                   
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label>Cancellation Cheque *</label>
+                        <input type="file" id="form3Example1n" name="passbookicon"  class="form-control form-control-lg" (change)=selectimages($event) placeholder="Passbook" />
+                          </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <label>Pincode *</label>
+                        <input type="number" id="form3Example9" formControlName="pincode"  name="pincode"  class="form-control form-control-lg" placeholder="pincode" />
+                      </div>  
+                      </div>
+                  </div> 
+                  <div class="form-outline mb-4">
+                    <label>Type Of Business *</label> 
+                    <select type="text" id="form3Example90" class="form-control form-control-lg" name="typeofbusiness" formControlName="typeofbusiness"   placeholder="Type of business" >
+                      <option >Choose..</option>
+                      <option >Men's</option>
+                      <option >Women's</option>
+                      <option >Kid's</option> 
+                      <option >Cosmetic's & Beauty</option>
+                      <option >Fashion Jewellary</option>
+                      <option >Stationery & Office Supplies</option>
+                      <option >Toys & Games</option> 
+                   </select>
+                  
+                </div>  
+                <input type="hidden" id="form3Example1m" class="form-control "  formControlName="_id" name="_id"   placeholder="Company Name" />
+                <input type="hidden" id="form3Example1m" class="form-control "  formControlName="Phoneno" name="Phoneno"   placeholder="Company Name" />
+  
+              
+              
+  
+                 
+              
+                                           
+                
+                 
+                <div class="d-grid gap-2">
+                  <button id="button"  class="btn btn-primary" type="submit" >Submit</button>
+                  
+                </div> 
+  
+                
+                </form> 
+                </div>
+                
+              </div>
+            
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,238 @@
+     
+                              <div class="container">
+                                <div class="col-md-12">
+                              <div class="icon-box icon-box-side icon-box-light">
+                                  <span class="icon-box-icon icon-account mr-2">
+                                      <i class="w-icon-user"></i>
+                                  </span>
+                                  <div class="icon-box-content">
+                                      <h4 class="icon-box-title mb-0 ls-normal">Add Product Details</h4>
+                                  </div>
+                              </div>    
+                              
+                              <form class="form account-details-form" [formGroup]="uploadform" (ngSubmit)="createItem()">
+                                  <div class="row">
+                                      <div id="treeview"> 
+                                          
+                                      </div>
+
+                                      <div class="col-md-6"> 
+                                          <div class="form-group"> 
+                                              <label for="firstname">Item Name*</label>
+                                              <input type="text"  name="itemname" formControlName="itemname" placeholder="Product Name"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                     
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname">SKU *</label>
+                                              <input type="text" id="lastname" name="sku" formControlName="sku" placeholder="SKU"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      
+                                      
+                                      <div class="col-md-6">
+                                          <div class="form-group"> 
+                                               <label for="lastname">Height *</label>
+                                              <input type="text" id="lastname" name="height"  formControlName="height" placeholder="height"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname">Width *</label>
+                                              <input type="text" id="lastname" name="width" formControlName="width" placeholder="Width"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname">Length *</label>
+                                              <input type="text" id="lastname" name="length" formControlName="length" placeholder="Length"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname">Weight *</label>
+                                              <input type="text" id="lastname" name="weight" formControlName="weight" placeholder="Weight"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      
+                                     
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                      <label for="lastname">Item Images *</label>
+                                      <input   type="file"  multiple (change)=selectmultipleimages($event) id="url"  class="form-control form-control-md" />
+                         
+                                      <img [src]="imgUrl" height="200" width="200" *ngIf="imgUrl">
+                                  </div>
+                              </div>
+                                 
+                              
+                          
+                              
+                              
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname">Meta Tags *</label>
+                                              <input type="text" id="lastname" name="metatags" formControlName="metatags" placeholder="Meta Tags"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname">Meta Description *</label>
+                                              <input type="text" id="lastname" name="metadescription" formControlName="metadescription" placeholder="Meta Description "
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname"> QC Status *</label>
+                                              <input type="text" id="lastname" name="QCStatus" formControlName="QCStatus" placeholder="QC Status"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname"> QC Failed Reason *</label>
+                                              <input type="text" id="lastname" name="QCFailedReason" formControlName="QCFailedReason" placeholder="QC Failed Reason"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname">Delevery Term *</label>
+                                              <select type="text" id="lastname" name="deleveryTerm" formControlName="deleveryTerm" placeholder="Delevery Term"
+                                                  class="form-control form-control-md">
+
+                                                 
+                                                      <option >Choose...</option>
+                                                      <option >1</option>
+                                                      <option >2</option>
+                                                      <option >3</option>
+                                                      <option >4</option>
+                                                     </select>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname"> Hsncode *</label>
+                                              <input type="text" id="lastname" name="hsncode" formControlName="hsncode" placeholder="Hsncode"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label for="lastname">Rate Of GST *</label>
+                                              <input type="text" id="lastname" name="rateofgst" formControlName="rateofgst" placeholder="Rate Of GST"
+                                                  class="form-control form-control-md">
+                                          </div>
+                                      </div>
+                                      
+                                  </div>
+
+                                  <div class="form-group mb-3">
+                                      <label for="display-name">Short Description *</label>
+                                      <textarea type="text" id="display-name" name="shortdescription" formControlName="shortdescription" placeholder="shortdescription "
+                                          class="form-control form-control-md mb-0"></textarea>
+                                      </div>
+
+                                  <div class="form-group mb-6">
+                                      <label for="email_1">Long Description *</label>
+                                      <textarea type="text" id="email_1" name="longdescription" formControlName="longdescription" placeholder="Long Description"
+                                          class="form-control form-control-md"></textarea>
+                                  </div>
+                                
+                                  
+                                  <div class="form-group">
+                                      <label class="text-dark" for="cur-password">Specification *</label>
+                                      
+                                           <ckeditor  [editor]="editor" name="specification" formControlName="specification">
+                                          
+                                         </ckeditor>
+  
+                                  </div>
+                                  <div class="form-group mb-3">
+                                      <label for="display-name">Mrp *</label>
+                                      <input type="text" id="display-name" name="mrp" formControlName="mrp" placeholder="Mrp"
+                                          class="form-control form-control-md mb-0">
+                                      </div>
+                                      <div class="form-group mb-3">
+                                          <label for="display-name">Selling Price *</label>
+                                          <input type="text"  id="display-name" name="sellingprice" formControlName="sellingprice" placeholder="Selling Price"
+                                              class="form-control form-control-md mb-0">
+                                          </div>
+                                          <div class="form-group mb-3">
+                                              <label for="display-name">Currentstock *</label>
+                                              <input type="text"  id="display-name" name="currentstock" formControlName="currentstock" placeholder="currentstock"
+                                                  class="form-control form-control-md mb-0">
+                                              
+              
+                                              </div>
+                                                              
+                      
+                                  <div class="form-group">
+                                      <label><h4>Filter</h4></label>
+                                      
+                                      <select class="form-control" name="filter_id"  formControlName="filter_id" (change)="onSelectfilterid($event)"  required  >
+                                          
+                                      <option >Choose...</option>
+                                     <option *ngFor="let category of category" value="{{category.filter_id._id}}">{{category.filter_id.filterName}}</option>
+                                      </select>
+                                     
+                                     
+                                  </div>
+                                  <div class="form-group">
+                                      <label><h4>Filter Value</h4></label>
+                                      
+                                      <select class="form-control" name="FilterValues" formControlName="FilterValues" id="filtervalues"   required  >
+                                          <option >Choose..</option>
+                                          <option *ngFor="let filter of filters" value="{{filter._id}}">{{filter.filtervalue}}</option>
+                                      </select>
+                                     
+                                     
+                                  </div> 
+                                  
+                                  
+                                  <input   type="hidden" id="primary" value="" formControlName="categoryid"   name="categoryid"    placeholder="Category Name"
+
+                                  class="form-control form-control-md">  
+
+                                 
+                                  <div class="d-grid gap-2">
+                                      <button id="button"  class="btn btn-primary" type="submit">Submit</button>
+                                      
+                                    </div>
+                                  
+                              </form>
+                              </div>
+                          </div>
+
+                          <div  id="logo2" >
+                              <div class="page-content error-404">
+                                  <div class="container">
+                                      <div class="banner">
+                                          <figure>
+                                              <img src="../../../assets/assets/images/login.png" alt="Error 404"  
+                                                 id="login" />
+                                          </figure>
+                                          <div class="banner-content text-center">
+                                              <h2 class="banner-title">
+                                                  <span class="text-secondary"></span> PLEASE LOG IN !
+                                              </h2>
+                                              <p class="text-dark">Login to view items</p>
+                                              <a href="signup" class="btn btn-dark btn-rounded btn-icon-right">Login<i class="w-icon-long-arrow-right"></i></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                               
+                                
+                          
+                            </div> 

@@ -1,0 +1,91 @@
+
+            <!-- End of Header Top -->
+
+            <div class="dropdown cart-dropdown cart-offcanvas mr-0 mr-lg-2" >
+                <div class="cart-overlay"></div>
+                <a href="cart#" class="cart-toggle label-down link">
+                    <i class="compare-label d-lg-show w-icon-bag">
+                        <span class="cart-count">{{cartcount.cart}}</span>
+                    </i>  
+                    <span class="cart-label">Cart</span>
+                </a>
+                <div class="dropdown-box" >
+                    <div class="cart-header"> 
+                        <span>Shopping Cart</span>
+                        <a href="cart#" class="btn-close">Close<i class="w-icon-long-arrow-right"></i></a>
+                    </div>
+                    <div *ngIf="cart.length>0">
+                    <div  id="text" >
+                        <div class="product product-cart"  *ngFor="let cart of cart ">
+                            <div class="product-detail">
+                                <a href="itemdetails/{{cart.itemid._id}}" class="product-name" style="color: black;">{{cart.itemid.itemname}}</a>
+                                <div class="price-box">
+                                    <del  class="old-price">{{cart.mrp *cart.quantity | currency:'INR'}}</del> 
+                                    <span class="product-price" style="padding: 3px;">{{cart.price *cart.quantity | currency:'INR'}}</span> 
+                                </div> 
+ 
+                                <div class="input-group "> 
+                                    <a  class="btn-product-icon " style="border-radius: 35px; "
+                                    title="increase quantity" type="submit" (click)="incquantity(cart._id,cart.quantity)"><h5 style="margin-top: 5px;">+</h5></a>
+                                    <a style="font-size: 13px; margin-top: -9px;">{{cart.quantity}}</a>
+                                    
+                                        <a class="btn-product-icon " style="border-radius: 35px; "
+                                        title="decrease quantity" type="submit" (click)="decquantity(cart._id,cart.quantity-1)"><h2>-</h2></a>
+                                
+                                </div>
+                                <hr>
+                            </div> 
+                            
+                            <figure class="product-media"> 
+                                <a href="itemdetails/{{cart.itemid._id}}">
+                                    <img src="http://localhost:4000/{{cart.itemid.itemImages[0].filename}}" alt="product" height="84"
+                                        width="94" />
+                                </a>
+                            </figure>
+                            <button class="btn btn-link btn-close" style="align-items: center; margin-right: 9px;" aria-label="button" (click)="deletecart(cart._id)" type="submit">
+                                <i style="margin-left: -3px;margin-top: -2px;" class="far fa-trash"></i>
+                            </button>
+                        </div>
+
+                         <!-- End of Dropdown Box -->
+               
+                    </div>
+
+<hr>
+                    <div class="cart-total" style="margin-top: -13px;">
+                        <label>Bagtotal:</label>
+                        <span class="price">{{mrptotalprice  | currency:'INR'}}</span>
+                    </div> 
+                    <div class="cart-total"  style="margin-top: -33px; color: maroon;">
+                        <label>Bag Discount:</label>
+                        <span class="price">{{mrptotalprice - totalprice  | currency:'INR'}}</span>
+                    </div> 
+                    <div class="cart-total" style="margin-top: -33px;">
+                        <label>Subtotal:</label>
+                        <span class="price">{{totalprice | currency:'INR'}}</span>
+                    </div> 
+                    <div class="cart-total" style="margin-top: -33px;">
+                        <label>Shipping Charge:</label>
+                        <span class="price"><h5>Free</h5></span>
+                    </div> 
+
+                    <div class="cart-total" style="margin-top: -33px;">
+                        <label>Grand:</label>
+                        <span class="price">{{totalprice | currency:'INR'}}</span>
+                    </div> 
+                    <div class="cart-action" style="margin-top: -17px;">
+                        <a href="Cart/cartdetails" class="btn btn-primary  btn-rounded" style="border-radius: 23px;">View Cart</a>
+                        <a href="checkout" class="btn btn-danger  btn-rounded" style="border-radius: 23px;">Checkout</a>
+                    </div>
+                </div>
+
+
+                <div *ngIf="cart.length==0" class="alert alert-warning" role="alert">
+                    hii your cart is  empty
+                 </div>
+                </div>
+
+              
+             
+            </div>
+       

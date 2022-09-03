@@ -1,0 +1,110 @@
+<app-header></app-header>
+
+<div class="container" style="padding: 5px;">
+
+ <div class="tab-pane">
+                                <div class="icon-box icon-box-side icon-box-light">
+                                    
+                                    <div class="icon-box-content">
+                                        <h4 class="icon-box-title mb-0 ls-normal" style="background-color: white;">Personal Information</h4>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6 mb-6">
+                                        <div class="ecommerce-address billing-address pr-lg-8">
+                                            <h4 class="title title-underline ls-25 font-weight-bold"></h4>
+                                            <address class="mb-8">
+                                                <table class="address-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Shop Owner:</th>
+                                                            <td>{{customer.shopownername}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Phoneno:</th>
+                                                            <td>{{customer.Phoneno}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Shop Name:</th>
+                                                            <td>{{customer.shopname}}</td>
+                                                        </tr>
+                                                        
+                                                        <tr>
+                                                            <th>Businesspancard No:</th>
+                                                            <td>{{customer.businesspancardno}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Gstn No:</th>
+                                                            <td>{{customer.Gstcertificate}}</td>
+                                                        </tr>
+                                                        
+
+                                                        <tr>
+                                                            <th>Type Of Business:</th>
+                                                            <td>{{customer.typeofbusiness}}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </address>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 mb-6">
+                                        <div class="ecommerce-address shipping-address pr-lg-8">
+                                            <h4 class="title title-underline ls-25 font-weight-bold"></h4>
+                                            <address >
+                                                <table class="address-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Udyam Registration Certificate :</th>
+                                                            <td>
+                                                                <img src="https://demo22.appman.in/{{customer.udyamregistrationcertificate[0].udyamregistrationcertificate[0].filename}}"  alt="user-img" class="avatar-xl rounded-sqare mb-1">
+                                    
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Front Side Photo Of The Shop :</th>
+                                                            <td>
+                                                                <img src="https://demo22.appman.in/{{customer.frontsidephoto[0].frontsidephoto[0].filename}}"  alt="user-img" class="avatar-xl rounded-sqare mb-1">
+                                    
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Back Side Photo Of The Shop :</th>
+                                                            <td>
+                                                                <img src="https://demo22.appman.in/{{customer.backsidephoto[0].backsidephoto[0].filename}}"  alt="user-img" class="avatar-xl rounded-sqare mb-1">
+                                    
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Left Side Photo Of The Shop :</th>
+                                                            <td>
+                                                                <img src="https://demo22.appman.in/{{customer.leftsidephoto[0].leftsidephoto[0].filename}}"  alt="user-img" class="avatar-xl rounded-sqare mb-1">
+                                    
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Right Side Photo Of The Shop :</th>
+                                                            <td>
+                                                                <img src="https://demo22.appman.in/{{customer.leftsidephoto[0].rightsidephoto[0].filename}}"  alt="user-img" class="avatar-xl rounded-sqare mb-1">
+                                    
+                                                            </td>
+                                                        </tr>
+                                                       
+                                                        <tr>
+                                                            <th>Postal Code:</th>
+                                                            <td>{{customer.pincode}}</td> 
+                                                        </tr>
+                                                       
+                                                    </tbody>
+                                                </table>
+                                            </address>
+                                            <a href="buyerprofile/{{customer._id}}"
+                                            class="btn btn-link btn-danger btn-sm text-light">Edit
+                                                your profile<i class="w-icon-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+</div>

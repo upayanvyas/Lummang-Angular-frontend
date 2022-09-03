@@ -1,0 +1,311 @@
+<h1>Add New Product</h1>
+<ul class="container" id="" *ngIf="user">
+  <form class="form account-details-form" [formGroup]="uploadform" (ngSubmit)="createItem()">
+    <div class="col-lg-9 mx-auto">
+
+      <label>
+        <h3>Category*</h3>
+      </label>
+      <select class="form-control" (change)="onSelectprimaryid($event)" required>
+        <option>Choose...</option>
+        <option *ngFor="let data of data" value="{{data._id}}">
+          <h4>{{data.categoryname}}</h4>
+        </option>
+      </select>
+      <br>
+
+      <div class="col-md-12" *ngIf="showme">
+        <label for="lastname">
+          <h3>Subcategory *</h3>
+        </label>
+        <select class="form-control" (change)="onSelectprimaryidd($event)" required>
+          <option>Choose...</option>
+          <option *ngFor="let data of sceondprimary" value="{{data._id}}">{{data.categoryname}}</option>
+        </select>
+      </div>
+      <br>
+
+      <div class="col-md-12" *ngIf="show">
+        <label for="lastname">
+          <h3>Product Type *</h3>
+        </label>
+        <div class="form-group">
+          <select class="form-control" name="categoryid" formControlName="categoryid"
+            (change)="getfilterBycategoryid($event)" required>
+            <option>Choose...</option>
+            <option *ngFor="let data of sceondprimaryy" value="{{data._id}}">{{data.categoryname}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tab tab-nav-boxed tab-nav-outline show-code-action">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#tab1-4">Sell in Pices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab1-5">Sell in Set</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1-4">
+            <label>
+              <h3>Minimum Quantity Order*</h3>
+            </label>
+            <input type="text" class="form-control" name="minimumquantityorder" formControlName="minimumquantityorder"
+              required>
+
+          </div>
+          <div class="tab-pane" id="tab1-5">
+            <label>
+              <h3>Listing Minimum Order Quantity*</h3>
+            </label>
+            <input type="text" class="form-control" name="listingminimumordequantity"
+              formControlName="listingminimumordequantity" required>
+            <br>
+
+
+            <label>
+              <h3>How Many Pieces per Set* </h3>
+            </label>
+            <input type="text" class="form-control" name="howmanypicesperset" formControlName="howmanypicesperset"
+              required>
+            <br>
+            <label>
+              <h3>Content Details of this Set Set*</h3>
+            </label>
+            <input type="text" class="form-control" name="contentdetailofthisset"
+              formControlName="contentdetailofthisset" required>
+
+            <br>
+            <label>
+              <h3>Nos. of colour in this set *</h3>
+            </label>
+            <input type="text" class="form-control" name="noofcolourinthisset" formControlName="noofcolourinthisset"
+              required>
+
+          </div>
+          <br>
+          <label>
+            <h3>Selling Price*</h3>
+          </label>
+          <input type="text" class="form-control" name="price" formControlName="price" required>
+          <br>
+          <br>
+
+          <label>
+            <h3>Mrp*</h3>
+          </label>
+          <input type="text" class="form-control" name="mrp" formControlName="mrp" required>
+          <br>
+
+          <div>
+            <label>
+              <h3>Gst*</h3>
+            </label>
+            <select class="form-control" name="gst" formControlName="gst" required>
+
+              <option>Choose...</option>
+              <option>5%</option>
+              <option>12%</option>
+              <option>18%</option>
+              <option>28%</option>
+
+
+            </select>
+
+            <button type="submit" (click)="gst()">Add Gst</button>
+          </div>
+          <div class="col-md-12" *ngIf="showgst">
+            <input type="text" class="form-control" name="gst" formControlName="gst" placeholder="add Gst" required>
+          </div>
+          <br>
+
+          <label>
+            <h3>SKU ID*</h3>
+          </label>
+          <input type="text" class="form-control" name="sku" formControlName="sku" required>
+
+          <br>
+
+
+          <label>
+            <h3>HSN Code*</h3>
+          </label>
+          <input type="text" class="form-control" name="hsncode" formControlName="hsncode" required>
+
+          <br>
+          <label>
+            <h3>Item Title</h3>
+          </label>
+          <input type="text" class="form-control" name="itemname" formControlName="itemname" required>
+          <br>
+          <label>
+            <h3>Brand Name</h3>
+          </label>
+          <input type="text" class="form-control" name="brandname" formControlName="brandname" required>
+
+          <br>
+          <label>
+            <h3>Brand Image</h3>
+          </label>
+          <input type="file" name="brandname" (change)=selectimage6($event) class="form-control" required>
+
+          <br>
+
+          <label>
+            <h3>Design Code</h3>
+          </label>
+          <input type="text" class="form-control" name="designcode" formControlName="designcode" required>
+
+
+
+          <br>
+          <div>
+            <div class="form-group">
+              <label>
+                <h3>Cover Image *(Image Size No More Than 10mb )</h3>
+              </label>
+              <input type="file" name="coverphoto" (change)=selectmultipleimages($event) id="url"
+                class="form-control form-control-md" />
+
+
+            </div>
+          </div>
+
+          <div>
+            <div class="form-group">
+              <label>
+                <h3>Product Images *(Image Size No More Than 10mb )</h3>
+              </label>
+              <input type="file" name="productimage1" id="url" class="form-control form-control-md"
+                (change)=selectimage1($event) />
+
+            </div>
+          </div>
+          <div>
+            <div class="form-group">
+              <label>
+                <h3>Product Image (Image Size No More Than 10mb )</h3>
+              </label>
+              <input type="file" name="productimage2" (change)=selectimages2($event) id="url"
+                class="form-control form-control-md" />
+
+
+            </div>
+          </div>
+          <div>
+            <div class="form-group">
+              <label>
+                <h3>Product Image (Image Size No More Than 10mb )</h3>
+              </label>
+              <input type="file" name="productimage3" multiple (change)=selectimages3($event) id="url"
+                class="form-control form-control-md" />
+
+            </div>
+          </div>
+          <div>
+            <div class="form-group">
+              <label>
+                <h3>Product Images(Image Size No More Than 10mb )</h3>
+              </label>
+              <input type="file" name="productimage4" (change)=selectimage4($event) id="url"
+                class="form-control form-control-md" />
+
+
+            </div>
+          </div>
+          <div>
+            <div class="form-group">
+              <label>
+                <h3>Product Images(Image Size No More Than 10mb )</h3>
+              </label>
+              <input type="file" name="productimage5" (change)=selectimage5($event) id="url"
+                class="form-control form-control-md" />
+            </div>
+            <!-- filter starts -->
+            <div class="row">
+              <div class="col-md-3" *ngFor="let data of filters ; let i=index">
+                <div class="row">
+                  <div class="form-group">
+                    <br>
+                    <label class="col-md-12">
+                      <h3>{{data.filters[0].filterName}} *</h3>
+                    </label>
+                    <div class="col-md-12 filter-column-data">
+                      <div *ngFor="let dataa of data.FilterValues ">
+                        <input (change)="value($event,dataa._id)" type="checkbox" value="{{dataa._id}}">{{
+                        dataa.filtervalue
+                        }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- filter starts -->
+
+            <label>
+              <h3>Product Details</h3>
+            </label>
+            <textarea type="text" class="form-control" name="productdetails" formControlName="productdetails"
+              required></textarea>
+
+            <br>
+            <label>
+              <h3>Country of Origin</h3>
+            </label>
+            <input type="text" class="form-control" name="countryoforigin" formControlName="countryoforigin" required>
+
+            <br>
+            <label>
+              <h3>Listing Expire Days</h3>
+            </label>
+            <input type="text" class="form-control" name="listigexpiredays" formControlName="listigexpiredays" required>
+
+
+            <br>
+            <label>
+              <h3>Free Delivery*</h3>
+            </label>
+            <select class="form-control" name="freedelivery" formControlName="freedelivery" required>
+              <option>Choose...</option>
+              <option>yes</option>
+              <option>No</option>
+            </select>
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="text-center">
+      <button id="button" style="width:123px ;height: 45px; " class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+</ul>
+
+
+<div *ngIf="!user" role="alert">
+  <div class="page-content error-404">
+    <div class="container">
+      <div class="banner">
+        <figure>
+          <img src="../../../assets/assets/images/login.png" alt="Error 404" id="login" />
+        </figure>
+        <div class="banner-content text-center">
+          <h2 class="banner-title">
+            <span class="text-secondary"></span> PLEASE LOG IN !
+          </h2>
+          <p class="text-dark">Login to Add Products</p>
+          <a href="signup" class="btn btn-dark btn-rounded btn-icon-right">Login<i
+              class="w-icon-long-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

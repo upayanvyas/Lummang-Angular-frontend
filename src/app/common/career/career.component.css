@@ -1,0 +1,84 @@
+.contact-form {
+    box-shadow: 7px 5px 30px rgb(72 73 121 / 15%);
+    padding: 0px;
+}
+*, *::before, *::after {
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: normal;
+    color: #828893;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    text-rendering: optimizelegibility;
+    /* -moz-osx-font-smoothing: grayscale; */
+    -webkit-font-smoothing: antialiased;
+}
+
+
+html {
+    /* font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar; */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*, *::before, *::after {
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+.contact-form form p button {
+    width: auto;
+    padding: 15px 20px;
+    background: #176ab0 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 11px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.contact-form form p input {
+    width: 100%;
+    border: medium none;
+    background: #f8f9fa none repeat scroll 0 0;
+    padding: 10px 15px;
+    height: 50px;
+    font-size: 14px;
+    color: #111;
+}
+.contact-form form p textarea {
+    width: 100%;
+    min-height: 130px;
+    border: medium none;
+    background: #f8f9fa none repeat scroll 0 0;
+    padding: 10px 15px;
+    height: 50px;
+    font-size: 14px;
+    color: #111;
+}
+img {
+    max-width: 100%;
+    
+}
+.col-lg-7 {
+    padding-bottom: 50px;
+}

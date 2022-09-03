@@ -1,0 +1,136 @@
+
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+                <div class="col-xl-6 d-none d-xl-block">
+                  <img 
+                    src="assets/assets/images/20943593.jpg"
+                    alt="Sample photo"
+                    class="img-fluid"
+                    style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"
+                    
+                  />
+                </div>
+               
+                <div class="col-xl-6">
+                 
+                  <div class="card-body p-md-5 text-black">
+  
+                   
+                    <h3 class="mb-5 text-uppercase">verify your business as a Seller</h3>
+                    <form class="form account-details-form" [formGroup]="uploadform" (ngSubmit)="sellerregister()">
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <label>Company Owner Name *</label>
+                          <input type="text" id="form3Example1n" formControlName="companyownername" name="companyownername"  class="form-control form-control-lg" placeholder="Company Owner Name" />
+                          <div *ngIf="uploadform.get('companyownername').invalid && uploadform.get('companyownername').touched" class="error">COMPANYOWNER NAME REQURED **</div> 
+                   
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <label>Company Name *</label>
+                          <input type="text" id="form3Example1m" class="form-control form-control-lg"  name="companyname"  formControlName="companyname" placeholder="Company Name" />
+                          <div *ngIf="uploadform.get('companyname').invalid && uploadform.get('companyname').touched" class="error">COMPANY NAME REQURED **</div> 
+                   
+                            </div> 
+                      </div>
+                     
+                    </div> 
+    
+                    <div class="form-outline mb-4">
+                      <label>Businesspancard No.  *</label>
+                      <input type="text" id="form3Example8" formControlName="businesspancardno"  name="businesspancardno" class="form-control form-control-lg" placeholder="Business PAN Card No" />
+                      <div class="" *ngIf="uploadform.get('businesspancardno').invalid && uploadform.get('businesspancardno').touched">
+                        <div class="error" *ngIf="uploadform.get('businesspancardno').errors.required">PANCARD  NUMBER IS REQUIRED **
+                        </div>
+                        <div  class="error" *ngIf="uploadform.get('businesspancardno').errors.pattern">ENTER A VALID PANCARD NUMBER **</div>
+                    </div>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <label>GSTIN No.</label>
+                      <input type="text" id="form3Example8"  formControlName="Gstcertificate" name="Gstcertificate" class="form-control form-control-lg" placeholder="GSTIN No" />
+                      <div *ngIf="uploadform.get('Gstcertificate').invalid && uploadform.get('Gstcertificate').touched" class="error">GSTIN NO REQURED **</div> 
+                   
+                   
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <label>Udyam Registration Certificate Phototo *</label>
+                      <input type="file" id="form3Example9" formControlName="udyamregistrationcertificate" name="udyamregistrationcertificate" class="form-control form-control-lg" (change)=selectimage($event) placeholder="Udyam Registration Certificate No." />
+                      
+                    </div>
+
+                    <div class="row"> 
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                      <label>Postal Code*</label>
+                      <input type="number" id="form3Example9" formControlName="pincode" name="pincode" class="form-control form-control-lg" placeholder="Postal Code" />
+                      <div *ngIf="uploadform.get('pincode').invalid && uploadform.get('pincode').touched" class="error">PINCODE REQURED **</div> 
+                   
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                    <label>Current Account Number *</label>
+                    <input type="number" id="form3Example9" formControlName="currentaccountno" name="currentaccountno" class="form-control form-control-lg" placeholder="Current Account Number" />
+                    <div *ngIf="uploadform.get('currentaccountno').invalid && uploadform.get('currentaccountno').touched" class="error">CURRENT ACCOUNT NO REQURED **</div> 
+                   
+                    </div>
+                  </div>
+                  </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <label>Ifsc code *</label>
+                          <input type="text" id="form3Example1m" class="form-control form-control-lg" name="IFsc"  formControlName="IFsc" placeholder="Ifsc code" />
+                          <div *ngIf="uploadform.get('IFsc').invalid && uploadform.get('IFsc').touched" class="error">IFsc NO REQURED **</div> 
+                   
+                            </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <label>Cancellation Cheque *</label>
+                          <input type="file" id="form3Example1n" name="passbookicon"  class="form-control form-control-lg" (change)=selectimages($event) placeholder="Passbook" />
+                            </div>
+                      </div>
+                    </div> 
+                      
+    
+                    <div class="form-outline mb-4">
+                      <label>Business Type *</label>
+                      <select type="text" id="form3Example90" class="form-control form-control-lg" name="typeofbusiness" formControlName="typeofbusiness"  placeholder="Type of business" >
+                       
+                        <option >Choose..</option>
+                        <option >Wholesaler</option>
+                        <option >Manufacturer</option>
+                        <option >Trader</option> 
+                        <option >Distributor</option> 
+                     </select>
+                     <div *ngIf="uploadform.get('typeofbusiness').invalid && uploadform.get('typeofbusiness').touched" class="error">BUSINESS TYPE REQURED **</div> 
+                   
+                  </div>  
+                    
+                  
+                   
+                  <div class="d-grid gap-2">
+                    <button id="button"  class="btn btn-primary" [disabled]="uploadform.invalid" type="submit">Submit</button>
+                    
+                  </div>  
+    
+                   
+                  </form> 
+                  </div>
+                  
+                </div>
+              
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>

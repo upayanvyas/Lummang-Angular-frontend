@@ -1,0 +1,66 @@
+
+        <main class="main login-page" style="border-radius: 25px;">
+            <div class="page-content" style=" background-color: antiquewhite;"> 
+                <div class="container" >
+                  
+                    <div class="login-popup"  style="background-color:white;border-radius: 30px;" >
+                        <div class="tab tab-nav-boxed tab-nav-center tab-nav-underline">
+                         
+                            <div class="tab-content">
+                              <p *ngIf="alert">
+                                <ngb-alert [dismissible]="false" style="color: red;text-align: center;">
+                                  <strong>Warning!</strong> Otp verification failed .
+                                </ngb-alert>
+                              </p>
+                                <div class="tab-pane active" id="sign-in">
+                                     <div class="card-body p-5 text-center">  
+                                      <h3 style="color: red; text-align: center; margin-top: -39px;" ><b>Welcome to Lummang!</b></h3>
+                               
+                                        <div class="my-md-5 pb-5">
+
+                                            <input type="phoneNo" class="form-control" value="{{user}}">
+                                          <div>
+                                            <h1 class="fw-bold mb-0"><h5 class="m-0"></h5><span class="mobile-text">Please enter the OTP sent to verify your phone number
+                                            </span></h1>
+                                            
+                                          </div>
+                                           
+                                         
+                          
+                                        </div> 
+
+                                        <div class="css-1dbjc4n r-1awozwy r-eqz5dr r-1777fci" style="background-color: rgba(255, 255, 255, 0);" >
+                                          <input  maxlength="5" autocapitalize="sentences" autocomplete="on" [(ngModel)]="users.Otp" name="Otp" autocorrect="on" dir="auto" spellcheck="true" inputmode="numeric" aria-label="otp" data-focusable="true" class="css-11aywtz" id="otp" value="" style="background-color: rgb(255, 255, 255); color: rgb(39, 39, 47); font-family: Roboto; font-size: 23px; font-weight: bold; letter-spacing: 39px; line-height: 32px; margin-left: 12px; max-width: 1244px; outline: none; padding-top: 10px; padding-bottom: 10px; text-align: left; width: 412px;">
+                                          <div class="css-1dbjc4n" style="align-items: stretch; background-color: rgba(255, 255, 255, 0); flex-direction: row; justify-content: flex-start; -webkit-box-align: stretch; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-box-pack: start;">
+                                              <div class="css-1dbjc4n r-eqz5dr" style="align-items: stretch;background-color: rgb(190, 196, 205);height: 1px;justify-content: flex-start;margin-left: 1px;margin-right: 12px;width: 28px;-webkit-box-align: stretch;-webkit-box-pack: start;"></div>
+                                              <div class="css-1dbjc4n r-eqz5dr" style="align-items: stretch; background-color: rgb(190, 196, 205); height: 1px; justify-content: flex-start; margin-left: 12px; margin-right: 12px; width: 28px; -webkit-box-align: stretch; -webkit-box-pack: start;"></div>
+                                              <div class="css-1dbjc4n r-eqz5dr" style="align-items: stretch; background-color: rgb(190, 196, 205); height: 1px; justify-content: flex-start; margin-left: 12px; margin-right: 12px; width: 28px; -webkit-box-align: stretch; -webkit-box-pack: start;"></div>
+                                              <div class="css-1dbjc4n r-eqz5dr" style="align-items: stretch; background-color: rgb(190, 196, 205); height: 1px; justify-content: flex-start; margin-left: 12px; margin-right: 12px; width: 28px; -webkit-box-align: stretch; -webkit-box-pack: start;"></div>
+                                              <div class="css-1dbjc4n r-eqz5dr" style="align-items: stretch; background-color: rgb(190, 196, 205); height: 1px; justify-content: flex-start; margin-left: 12px; margin-right: 12px; width: 28px; -webkit-box-align: stretch; -webkit-box-pack: start;"></div>
+
+                                          </div></div>
+                                       
+                                        <br>
+                                       
+                                        <a style=" border-radius: 23px; margin-left: 9px;" class="btn btn-danger btn-sm" (click)="signupPhoneno()"><h4 style="color: white; text-align: center;margin-top: 4px;margin-bottom: 4px;" >Verify</h4></a>
+                                        <div>
+                                          <br>
+                                          <p class="mb-0">Don't receive the code? <a href="#!" class="text-body fw-bold">RE-SEND</a></p>
+                                        </div>
+                                      </div>
+
+                                      
+                                    
+                                    </div>
+                                </div> 
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+                          
+                                       
+                              
+                                        
+       

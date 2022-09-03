@@ -1,0 +1,130 @@
+.intro {
+    height: 100%;
+    
+  }
+  
+  @media (min-height: 300px) and (max-height: 450px) {
+    .intro {
+      height: auto;
+    }
+  }
+  
+  .gradient-custom {
+    background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #720059 100%), linear-gradient(121.28deg, #669600 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), radial-gradient(100% 164.72% at 100% 100%, #6100FF 0%, #00FF57 100%), radial-gradient(100% 148.07% at 0% 0%, #FFF500 0%, #51D500 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+  }
+
+
+
+  #banner{
+    height: 300px;
+    margin-top: -45px;
+}
+#banner1{
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 59px;
+}
+#default{
+    margin-left: 300px;
+}
+#banner3{
+    height: 307px;
+    
+    
+}
+#banner4{
+   width: 580px;
+    font-size: 30px;
+}
+#banner7{
+    margin-left: 30px;
+    width: 457px;
+    clip-path:fill-box
+    
+    
+   
+
+}
+#banner8{
+   margin-top: 250px;
+   
+ }
+#banner9{
+    margin-left: 260px;
+    font-size: 19px;
+    width: 300px;
+
+}
+#banner10{
+    margin-top: 10px;
+    
+}
+#default{
+    height: 200px;
+}
+#banner11{
+    margin-left: 300px;
+    width: 200px;
+    margin-top: -90px;
+}
+#banner12{
+  margin-left: 300px;
+  width: 200px;
+  margin-top: -390px;
+}
+
+#banner13{
+  margin-left: 300px;
+  width: 200px;
+  margin-top: -90px;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+input{
+  border-radius: 10px;
+  border: 2px solid lightslategrey;
+}
+select{
+  border-radius: 10px;
+  border: 2px solid lightslategrey;
+}
+label{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+}
+h3{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+#btn{
+  color:white;
+  
+}
+button{
+  border-radius: 55px;
+  height: 40px;
+  width: 120px;
+  font-size: 15px;
+  margin-right: 185px;
+  
+}
+#img-fluid{
+  margin-bottom: -65px;
+
+}
+
+#item{
+  margin-top: -20px;
+ 
+}

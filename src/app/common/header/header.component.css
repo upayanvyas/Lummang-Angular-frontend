@@ -1,0 +1,58 @@
+#search{
+    font-size:14px;
+    
+}
+#category{
+    font-size:14px;
+
+}
+
+header{
+    margin-left: -70px ;
+}
+#nav{
+    margin-right: -90px;
+}
+input{
+    height: -90px;
+    width: 90px;
+}
+#head{
+  max-height: 10px;
+  
+}
+
+header{
+    font-family: inherit;
+    font-weight: bold;
+}
+#nav{
+    font-size: 15px;
+}
+
+#logo2{
+    max-height: 67px;
+}
+
+#search2{
+    max-width: 283px;
+    margin-left: 410px;
+}
+#banner{
+    font-family: inherit;
+}
+.cart-label{
+    
+
+        font-size:12px;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0;
+        color: #001325;
+        padding-bottom: 0.25rem;
+   
+}
+img{
+    width: 203px;
+    height: 100%;
+}

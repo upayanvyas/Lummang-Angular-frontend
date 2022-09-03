@@ -1,0 +1,179 @@
+#google{
+    height: 67px;
+    margin-left: -27px;
+}
+
+@media screen and (max-width: 600px) {
+    #google{
+        height: 67px;
+    margin-left: -30px;
+  
+  
+    }
+  }
+
+#footerbotton{
+    margin-left: 400px;   
+}
+@media screen and (max-width: 600px) {
+    #footerbotton{
+        height: 26px;
+        width: 624.74575805664062px;
+        margin-left: 17.11865234375px;
+        top: 6099px;
+        border-radius: nullpx;
+        
+  
+  
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+   #footerlogo{
+    
+    margin-left: 95.49169921875px;
+    top: 5571px;
+    border-radius: 0px;
+    
+  
+  
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .social-icons{
+        height: 24px;
+        width: 186.10169982910156px;
+       margin-left: 86.4404296875px;
+        top: 5653px;
+        border-radius: 0px;
+        
+   
+   
+     }
+   }
+
+   @media screen and (max-width: 600px) {
+    #company{
+        height: 24px;
+        width: 209.83050537109375px;
+        margin-left: 113px;
+        border-radius: nullpx;
+        font-family: Poppins;
+font-size: 21px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+   
+   
+     }
+   }
+ 
+
+   @media screen and (max-width: 600px) {
+    #widget-body{
+       
+        margin-left: 113px;
+        border-radius: nullpx;
+        font-family: Poppins;
+
+text-align: left;
+
+   
+   
+     }
+   }
+   @media screen and (max-width: 600px) {
+    #Customer{
+       
+        height: 24px;
+        width: 209.83050537109375px;
+        margin-left: 63px;
+        border-radius: nullpx;
+        font-family: Poppins;
+font-size: 21px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+   
+   
+     }
+   }
+   @media screen and (max-width: 600px) {
+ #downloadapp{
+    height: 24px;
+    width: 209.83050537109375px;
+    margin-left: 93px;
+    border-radius: nullpx;
+    font-family: Poppins;
+font-size: 21px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+
+ }
+}
+
+ @media screen and (max-width: 600px) {
+    #aboutlummang{
+       
+        margin-left: 113px;
+        border-radius: nullpx;
+        font-family: Poppins;
+
+text-align: left;
+   
+     }
+   }
+   @media screen and (max-width: 600px) {
+    #career{
+       
+        margin-left: 143px;
+        border-radius: nullpx;
+        font-family: Poppins;
+
+text-align: left;
+   
+     }
+   }
+   @media screen and (max-width: 600px) {
+    #return{
+       
+        margin-left: 117px;
+        border-radius: nullpx;
+        font-family: Poppins;
+
+text-align: left;
+   
+     }
+   }
+   @media screen and (max-width: 600px) {
+    #privacy{
+       
+        margin-left: 115px;
+        border-radius: nullpx;
+        font-family: Poppins;
+
+text-align: left;
+   
+     }
+   }
+
+   @media screen and (max-width: 600px) {
+    #term{
+       
+        margin-left: 95px;
+        border-radius: nullpx;
+        font-family: Poppins;
+
+text-align: left;
+   
+     }
+   }
+
+  

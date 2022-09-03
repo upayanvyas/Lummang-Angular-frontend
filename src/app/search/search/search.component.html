@@ -1,0 +1,62 @@
+<div>
+
+    <app-header></app-header>
+
+    <div class="container">
+        <div class="tab-content product-wrapper appear-animate">
+            
+            <span *ngIf="!gst">
+                <div class="alert alert-danger" role="alert" style="text-align: center;">
+                    Complete Your KYC Form For See The Product Price
+                </div>
+            </span>
+
+            <div class="tab-pane active pt-4" id="tab1-1">
+                <div class="row cols-xl-5 cols-md-4 cols-sm-3 cols-2">
+                    <div class="product-wrap" *ngFor="let data of item ">
+                        <div class="product text-center">
+                            <figure class="product-media">
+                                <a href="itemdetails/{{data._id}}">
+                                    <img src="https://demo22.appman.in/{{data.coverphoto[0].coverphoto[0].filename}}"
+                                        alt="Product" id="img" />
+                                </a>
+                            </figure>
+                            <div class="product-details">
+                                <h4 class="product-name"><a href="itemdetails/{{data._id}}">{{data.itemname}}</a></h4>
+                                <div class="product-price" *ngIf="gst">
+                                    <del class="old-price">{{data.mrp | currency:'INR'}}</del>
+                                    <ins class="new-price">{{data.price | currency:'INR'}}</ins>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Tab Pane -->
+        </div>
+
+        <app-footer></app-footer>
+
+    </div>
+</div>
+
+
+<div *ngIf="!user" id="logo2">
+    <div class="page-content error-404">
+        <div class="container">
+            <div class="banner">
+                <figure>
+                    <img src="../../../assets/assets/images/login.png" alt="Error 404" id="login" />
+                </figure>
+                <div class="banner-content text-center">
+                    <h2 class="banner-title">
+                        <span class="text-secondary"></span> PLEASE LOG IN !
+                    </h2>
+                    <p class="text-dark">Login to view items</p>
+                    <a href="signup" class="btn btn-dark btn-rounded btn-icon-right">Login<i
+                            class="w-icon-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
