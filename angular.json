@@ -30,7 +30,7 @@
               "src/styles.css"
             ],
             "scripts": []
-          }, 
+          },
           "configurations": {
             "production": {
               "fileReplacements": [
@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "lummang"
+  "defaultProject": "lummang",
+  "cli": {
+    "analytics": "cb5c36ac-6b81-480b-9636-270920b24d37"
+  }
 }

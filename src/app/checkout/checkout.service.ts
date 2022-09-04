@@ -24,8 +24,12 @@ export class CheckoutService {
     return this.http.post(this.baseUrl + 'api/order/verifyOrderPayment', verifyKeys, options)
   }
 
-  getMyOrders(id, status): Observable<any> {
-    return this.http.get(this.baseUrl +`api/order/getMyOrders/${id}/${status}`)
+  getBuyerOrders(id, status): Observable<any> {
+    return this.http.get(this.baseUrl +`api/order/getBuyerOrders/${id}/${status}`)
+  }
+
+  getSellerOrders(id, status): Observable<any> {
+    return this.http.get(this.baseUrl +`api/order/getSellerOrders/${id}/${status}`)
   }
 
 

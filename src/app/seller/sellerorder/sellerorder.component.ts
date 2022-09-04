@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../seller.service'
 import { NgbModal, ModalDismissReasons, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
 
+import { CheckoutService } from '../../checkout/checkout.service';
+
 @Component({
   selector: 'app-sellerorder',
   templateUrl: './sellerorder.component.html',
@@ -9,7 +11,7 @@ import { NgbModal, ModalDismissReasons, NgbModalOptions } from '@ng-bootstrap/ng
 })
 export class SellerorderComponent implements OnInit {
 
-  customerid = (JSON.parse(sessionStorage.getItem('data')))._id
+  userid
   orders = [{
     id: 12345,
     date: '123',
@@ -36,7 +38,10 @@ export class SellerorderComponent implements OnInit {
   isDesc = '';
 
 
-  constructor(private SellerService: SellerService, private modalService: NgbModal) {
+  constructor(private SellerService: SellerService,
+     private modalService: NgbModal ,
+     private CheckoutService: CheckoutService 
+    ) {
     this.modalOptions = {
       backdrop: 'static',
       backdropClass: 'customBackdrop',
@@ -45,12 +50,23 @@ export class SellerorderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // console.log((JSON.parse(sessionStorage.getItem('data')))._id)
-    // this.SellerService.getorderdetailsbycustomerid('62922e5850ad94df398ac93a').subscribe(data => {
-    //   this.orders = data
-    //   console.log(this.orders)
-    // })
+    this.userid = (JSON.parse(sessionStorage.getItem('data')))._id
+    this.getMyOrders(this.userid,"all")
   }
+
+
+
+  getMyOrders(id, status) {
+    console.log('in order : ', id, status)
+    this.CheckoutService.getSellerOrders(id, status).subscribe((res) => {
+      console.log('res: ', res)
+      this.orders = res.data
+    }, (err) => {
+      console.log('err: ', err)
+    })
+
+  }
+
 
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {

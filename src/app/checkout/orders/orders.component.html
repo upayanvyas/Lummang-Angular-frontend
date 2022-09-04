@@ -16,10 +16,11 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-sm-4">
-                            <select class="form-control" name="" id="">
-                                <option value="" class="text-center form-control">All Orders</option>
-                                <option value="" class="text-center form-control">Ongoing Orders</option>
-                                <option value="" class="text-center form-control">Completed Orders</option>
+                            <select class="form-control" name="" id=""  (change)="getMyOrders(userid,$event.target.value)" >
+                                <option value="all" class="text-center form-control">All Orders</option>
+                                <option value="orderongoing" class="text-center form-control">Ongoing Orders</option>
+                                <option value="odercompleted" class="text-center form-control">Completed Orders</option>
+                                <option value="ordercancel" class="text-center form-control">Cancelled Orders</option>
                             </select>
                         </div>
                     </div>

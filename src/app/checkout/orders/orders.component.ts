@@ -35,7 +35,7 @@ export class OrdersComponent implements OnInit {
 
   getMyOrders(id, status) {
     console.log('in order : ', id, status)
-    this.CheckoutService.getMyOrders(id, status).subscribe((res) => {
+    this.CheckoutService.getBuyerOrders(id, status).subscribe((res) => {
       console.log('res: ', res)
       this.orders = res.data
     }, (err) => {
