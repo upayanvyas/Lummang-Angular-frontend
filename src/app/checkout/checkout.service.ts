@@ -19,10 +19,19 @@ export class CheckoutService {
   }
 
   verifyOrderPayment(verifyKeys): Observable<any> {
-    let headers = new HttpHeaders({'x-razorpay-signature': verifyKeys.razorpay_signature});
+    let headers = new HttpHeaders({ 'x-razorpay-signature': verifyKeys.razorpay_signature });
     let options = { headers: headers };
     return this.http.post(this.baseUrl + 'api/order/verifyOrderPayment', verifyKeys, options)
   }
+
+  getMyOrders(id, status): Observable<any> {
+    return this.http.get(this.baseUrl +`api/order/getMyOrders/${id}/${status}`)
+  }
+
+
+
+
+
 
 
   placeorder(order): Observable<any> {

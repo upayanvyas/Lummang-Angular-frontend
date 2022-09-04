@@ -10,7 +10,7 @@ import { NgbModal, ModalDismissReasons, NgbModalOptions } from '@ng-bootstrap/ng
   styleUrls: ['./orders.component.css']
 })
 export class OrdersComponent implements OnInit {
-  buyerid = (JSON.parse(sessionStorage.getItem('data')))._id
+  userid
   orders: any
 
   title = 'Order Summary';
@@ -29,17 +29,22 @@ export class OrdersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if ((JSON.parse(sessionStorage.getItem('data')).usertype) === 'buyer') {
-      this.CheckoutService.getorderbybuyerid(this.buyerid).subscribe(data => {
-        console.log(data.data.orders)
-        this.orders = data.data.orders
-      })
-    } else {
-      console.log('user not exit')
-    }
+    this.userid = JSON.parse(sessionStorage.getItem('data'))._id
+    this.getMyOrders(this.userid, 'all')
   }
 
-  rating(e){
+  getMyOrders(id, status) {
+    console.log('in order : ', id, status)
+    this.CheckoutService.getMyOrders(id, status).subscribe((res) => {
+      console.log('res: ', res)
+      this.orders = res.data
+    }, (err) => {
+      console.log('err: ', err)
+    })
+
+  }
+
+  rating(e) {
     setTimeout(() => {
       console.log('currentRate: ', this.currentRate)
       alert(`Thanks for the rating ${this.currentRate}`)
@@ -58,9 +63,9 @@ export class OrdersComponent implements OnInit {
 
   openModal(content, obj) {
     console.log('modal content: ', content, obj.order)
-    if( obj.modalName ==='invoice'){
+    if (obj.modalName === 'invoice') {
       this.modalOptions['size'] = 'xl'
-    }else{
+    } else {
       this.modalOptions['size'] = 'lg'
     }
     this.orderDetail = obj.order
