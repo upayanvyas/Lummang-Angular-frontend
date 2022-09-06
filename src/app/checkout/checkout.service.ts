@@ -25,11 +25,22 @@ export class CheckoutService {
   }
 
   getBuyerOrders(id, status): Observable<any> {
-    return this.http.get(this.baseUrl +`api/order/getBuyerOrders/${id}/${status}`)
+    return this.http.get(this.baseUrl + `api/order/getBuyerOrders/${id}/${status}`)
   }
 
   getSellerOrders(id, status): Observable<any> {
-    return this.http.get(this.baseUrl +`api/order/getSellerOrders/${id}/${status}`)
+    return this.http.get(this.baseUrl + `api/order/getSellerOrders/${id}/${status}`)
+  }
+
+  trackOrder(awbNum): Observable<any> {
+    let payload = {
+      "data": {
+        "awb_number_list": "1369010468790",
+        "access_token": "5a7b40197cd919337501dd6e9a3aad9a",
+        "secret_key": "2b54c373427be180d1899400eeb21aab"
+      }
+    }
+    return this.http.post('https://pre-alpha.ithinklogistics.com/api_v3/order/track.json', payload)
   }
 
 

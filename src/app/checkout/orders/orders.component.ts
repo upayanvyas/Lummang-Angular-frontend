@@ -19,6 +19,7 @@ export class OrdersComponent implements OnInit {
 
   orderDetail: any = {}
   currentRate = 0
+  searchInput = ''
 
   constructor(private CheckoutService: CheckoutService, private modalService: NgbModal) {
     this.modalOptions = {
@@ -42,6 +43,23 @@ export class OrdersComponent implements OnInit {
       console.log('err: ', err)
     })
 
+  }
+
+  trackOrder() {
+    this.CheckoutService.trackOrder(this.searchInput).subscribe((res) => {
+      console.log('res: ', res)
+    }, (err) => {
+      console.log('err: ', err)
+    })
+    // this.createLink()
+  }
+
+  createLink() {
+    let link = document.createElement('a')
+    link.href = 'https://www.ithinklogistics.com/track-order'
+    link.target = '_blank'
+    console.log('link: ', link)
+    link.click()
   }
 
   rating(e) {
