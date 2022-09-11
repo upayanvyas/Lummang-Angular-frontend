@@ -57,6 +57,7 @@ import { ProductlistingComponent } from './productlisting/productlisting.compone
 import { CareerComponent } from './common/career/career.component';
 import { SellerorderComponent } from './seller/sellerorder/sellerorder.component';
 import { RazortestComponent } from './razortest/razortest.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 
 
 
@@ -112,7 +113,8 @@ import { RazortestComponent } from './razortest/razortest.component';
     ProductlistingComponent,
     CareerComponent,
     SellerorderComponent,
-    RazortestComponent
+    RazortestComponent,
+    AdmindashboardComponent
   
    
    

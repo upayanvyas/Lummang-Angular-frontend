@@ -1,58 +1,81 @@
+<main class="main login-page">
+    <form>
+        <div class="page-content" style=" background-color: antiquewhite; ">
+            <div class="container">
+                <div class="login-popup" style="background-color:white; border-radius: 30px;">
+                    <div style="border-radius: 25px;" class="tab tab-nav-boxed tab-nav-center tab-nav-underline">
 
-        <main class="main login-page" >
-            <form>
-            <div class="page-content" style=" background-color: antiquewhite; " >
-                <div class="container" >
-                    <div class="login-popup" style="background-color:white; border-radius: 30px;" >
-                        <div style="border-radius: 25px;" class="tab tab-nav-boxed tab-nav-center tab-nav-underline">
-                            
-                            <div class="tab-content">
-                            <form [formGroup]=" loginForm"(ngSubmit)="registerPhoneno()">
+                        <div class="tab-content">
+                            <form [formGroup]=" loginForm" (ngSubmit)="registerPhoneno()">
                                 <div class="tab-pane active" id="sign-in">
                                     <div class="form-group">
-                                       
-                                        <input type="phoneNo" class="form-control" id="phoneNo" name="Phoneno" formControlName="Phoneno" placeholder="Enter Mobile Number" 
-                                         minlength="10" maxlength="10"  placeholder="Enter Mobile Number" required>
-                                         
-                                         <div class="" *ngIf="loginForm.get('Phoneno').invalid && loginForm.get('Phoneno').touched">
-                                            <div class="error" *ngIf="loginForm.get('Phoneno').errors.required">MOBILE NUMBER IS REQUIRED
+
+                                        <input type="phoneNo" class="form-control" id="phoneNo" name="Phoneno"
+                                            formControlName="Phoneno" placeholder="Enter Mobile Number" minlength="10"
+                                            maxlength="10" placeholder="Enter Mobile Number" required>
+
+                                        <div class=""
+                                            *ngIf="loginForm.get('Phoneno').invalid && loginForm.get('Phoneno').touched">
+                                            <div class="error" *ngIf="loginForm.get('Phoneno').errors.required">MOBILE
+                                                NUMBER IS REQUIRED
                                             </div>
-                                            <div  class="error" *ngIf="loginForm.get('Phoneno').errors.pattern">ENTER A VALID MOBILE NUMBER</div>
+                                            <div class="error" *ngIf="loginForm.get('Phoneno').errors.pattern">ENTER A
+                                                VALID MOBILE NUMBER</div>
                                         </div>
                                     </div>
-                                    
-                                    <label>Select *</label>  
+
+                                    <label>Select *</label>
                                     <div class="form-checkbox user-checkbox mt-0">
+
                                         <div class="form-check">
-                                            <input class="form-check-input" value="buyer" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="usertype" formControlName="usertype">
-                                            
-                                            <label class="form-check-label" for="flexRadioDefault1" > 
-                                              <h5 id="buyer">As A Buyer</h5>
+                                            <input class="form-check-input" value="admin" type="radio"
+                                                name="flexRadioDefault" id="flexRadioDefault3" name="usertype"
+                                                formControlName="usertype" checked>
+                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                <h5 id="buyer">As an Admin</h5>
                                             </label>
-                                          </div>
-                                         
-                                          <div class="form-check">
-                                            <input class="form-check-input" value="seller" type="radio" name="flexRadioDefault" id="flexRadioDefault2" name="usertype" formControlName="usertype" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2" >
-                                             <h5 id="buyer" >As A Seller</h5> 
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" value="buyer" type="radio"
+                                                name="flexRadioDefault" id="flexRadioDefault1" name="usertype"
+                                                formControlName="usertype">
+
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                <h5 id="buyer">As A Buyer</h5>
                                             </label>
-                                          </div>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" value="seller" type="radio"
+                                                name="flexRadioDefault" id="flexRadioDefault2" name="usertype"
+                                                formControlName="usertype" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                <h5 id="buyer">As A Seller</h5>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <p>By continuing, you agree that you have read and accept our<a href="termandcondition" class="text-primary"> T&Cs </a>and<a href="privacypolicy" class="text-primary"> Privacy Policy.</a></p>
+                                    <p>By continuing, you agree that you have read and accept our<a
+                                            href="termandcondition" class="text-primary"> T&Cs </a>and<a
+                                            href="privacypolicy" class="text-primary"> Privacy Policy.</a></p>
                                     <a href="#" class="d-block mb-5 text-primary"></a>
                                     <div class="form-checkbox d-flex align-items-center justify-content-between mb-5">
-                                        <input type="checkbox" class="custom-checkbox" id="remember" name="remember" required="">
-                                        
+                                        <input type="checkbox" class="custom-checkbox" id="remember" name="remember"
+                                            required="">
+
                                     </div>
-                                    <button style="width: 270px; border-radius: 23px; margin-left: 9px;"  class="btn btn-danger" [disabled]="loginForm.invalid"  type="submit"><h4 style="color: white; text-align: center;margin-top: 4px;margin-bottom: 4px;" >Proceed</h4></button>
+                                    <button style="width: 270px; border-radius: 23px; margin-left: 9px;"
+                                        class="btn btn-danger" [disabled]="loginForm.invalid" type="submit">
+                                        <h4
+                                            style="color: white; text-align: center;margin-top: 4px;margin-bottom: 4px;">
+                                            Proceed</h4>
+                                    </button>
                                 </div>
                             </form>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </form>
-        </main>
-        
-
+        </div>
+    </form>
+</main>

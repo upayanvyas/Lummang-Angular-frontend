@@ -48,6 +48,7 @@ import { ProductlistingComponent } from './productlisting/productlisting.compone
 import { CareerComponent } from './common/career/career.component';
 import { SellerorderComponent } from './seller/sellerorder/sellerorder.component';
 import { RazortestComponent } from './razortest/razortest.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 
 const routes: Routes = [
   { path: "header", component: HeaderComponent },
@@ -96,6 +97,7 @@ const routes: Routes = [
   { path: 'career', component: CareerComponent },
   { path: 'sellerorder', component: SellerorderComponent },
   { path: 'razot-test', component: RazortestComponent },
+  { path: 'dashboard', component: AdmindashboardComponent },
 
   
 

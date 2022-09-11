@@ -1,0 +1,248 @@
+<div class="container">
+    <div class="tab-pane mb-4" id="account-orders">
+
+        <div class="icon-box icon-box-side icon-box-light">
+            <span class="icon-box-icon icon-orders">
+                <i class="w-icon-orders"></i>
+            </span>
+            <div class="icon-box-content">
+                <h4 class="icon-box-title text-capitalize ls-normal mb-0">Orders</h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <!-- <select class="form-control" name="" id=""  (change)="getMyOrders(userid,$event.target.value)" >
+                                <option value="all" class="text-center form-control">All Orders</option>
+                                <option value="orderongoing" class="text-center form-control">Ongoing Orders</option>
+                                <option value="odercompleted" class="text-center form-control">Completed Orders</option>
+                                <option value="ordercancel" class="text-center form-control">Cancelled Orders</option>
+                            </select> -->
+                            <input type="text" class="form-control" name ='searchInp' (input)="searchInput($event.target.value)" placeholder="Search Order by ID">
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4">
+                            <!-- <input type="text" class="form-control" name="search" [(ngModel)]="searchInput" placeholder="Enter AWB number"> -->
+                        </div>
+                        <div class="col-sm-2 text-center">
+                            <!-- <button class="btn btn-warning btn-sm" (click)="trackOrder()">Track Order</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped"> 
+                        <thead>
+                            <tr>
+                                <th>Order Number</th>
+                                <th>Order Date</th>
+                                <th>Buyer ID</th>
+                                <th>Seller ID</th>
+                                <th class="text-center">Order Status</th>
+                                <!-- <th>Rating</th>
+                                <th class="text-center">action</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let order of filteredOrder">
+                                <td>{{order.orderNo}}</td>
+                                <td>{{order.orderDatetime}}</td>
+                                <td>{{order.customerid}}</td>
+                                <td>{{order.sellerid}}</td>
+                                <td>{{order.orderstatus}}</td>
+                                <!-- <td>{{order.customerid}}</td>
+                                <td>{{order.customerid}}</td> -->
+                                    <!-- <td *ngIf="!order.total">NA</td>
+                                    <td class="text-center">successful</td> -->
+                                <!-- <td>
+                                    <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false" (click)="rating($event)">
+                                    </ngb-rating>
+                                </td> -->
+                                <td>
+                                    <button style="border:1px solid grey;"
+                                        class="btn btn-outline-dark btn-block btn-rounded"
+                                        (click)="openModal(mymodal, {order:order, modalName:'view'})">View</button>
+                                    <button class="btn btn-outline-dark btn-block btn-rounded"
+                                        (click)="openModal(invoicemodal, {order:null, modalName:'invoice'})">Invoice</button>
+                                </td>
+                            </tr>
+                            <tr *ngIf="filteredOrder?.length == 0" colspan="5" class="text-center">No data to display</tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer">
+                    <!-- <a href="shop-banner-sidebar.html" class="btn btn-dark btn-rounded btn-icon-right">Go
+                        Shop<i class="w-icon-long-arrow-right"></i>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">{{title}}</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ITEM</th>
+                    <th>QTY</th>
+                    <th>PRICE</th>
+                    <th>DELIVERY DETAILS</th>
+                    <th>SUBTOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>{{orderDetail.itemdetails[0].quantity}}</td>
+                    <td></td>
+                    <td>{{orderDetail.itemdetails[0].currentstatus}}</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-sm-9">
+                <span>Description*</span>&nbsp;<i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip"
+                    data-placement="top"
+                    title="Order can be canceled within 2 hours of order placement. time left to cancel an order is 1hr:33s"></i>
+                <textarea name="cancel_order" id="" cols="30" rows="3"
+                    placeholder="Enter order cancellation reason"></textarea>
+            </div>
+            <div class="col-sm-3 text-center">
+                <button class="btn btn-danger btn-rounded btn-sm mt-4" (click)="cancelOrder()">Cancel Order</button>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #invoicemodal let-modal>
+    <div class="modal-content" style="padding:10px 10px">
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Invoice</h4>
+
+            <button type="button" class="close float-right" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-2">
+                    Tax invoice
+                </div>
+                <div class="col-sm-2">
+                    order id:'24rff4'<br>
+                    order date: '23545'
+                </div>
+                <div class="col-sm-2">
+                    invoice no.:4234252435 <br>
+                    invoice date: 989473024
+                </div>
+                <div class="col-sm-2">
+                    GSTIN:08u20jr8j3 <br>
+                    PAN: 03ufj3j4
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-4"><strong>sold by</strong><br>
+                    S.R Enterprises,
+                    4/441, FIRST FLOOR, MALVIYA NAGAR, JAIPUR - 302017
+                </div>
+                <div class="col-sm-4"><strong>shipping address</strong><br>
+                    Ram chandra baskey <br>
+                    One point solutions,<br>
+                    C-42, savita chemical Road, TTC Industrial Area, <br>
+                    Turbhe,Navi Mumbai, 400705, IN-MH
+                </div>
+                <div class="col-sm-4"> <strong>billing address</strong><br>
+                    Ram chandra baskey <br>
+                    One point solutions,<br>
+                    C-42, savita chemical Road, TTC Industrial Area, <br>
+                    Turbhe,Navi Mumbai, 400705, IN-MH
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 bg-light">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>PRODUCT</th>
+                                <th>DESCRIPTION</th>
+                                <th>QTY</th>
+                                <th>GROSS AMOUNT</th>
+                                <th>TAXABLE VALUE</th>
+                                <th>IGST</th>
+                                <th>TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>product name</td>
+                                <td>H.S.N 640834 | IGST: 12%</td>
+                                <td>1</td>
+                                <td>840.00</td>
+                                <td>750.00</td>
+                                <td>90.00</td>
+                                <td>840.00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><strong>Shipping Charge</strong></td>
+                                <td>1</td>
+                                <td>49.00</td>
+                                <td>43.75</td>
+                                <td>5.25</td>
+                                <td>49.90</td>
+                            </tr>
+                            <tr>
+                                <td><strong>TOTAL QUANTITY: 1</strong></td>
+                                <td colspan="5"><strong class="float-right">TOTAL PRICE:</strong></td>
+                                <td>
+                                    <strong>889.00</strong><br>
+                                    All values are in INR
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-12">
+                    <strong>Seller Registered Address: </strong><br>
+                    S.R Enterprises,
+                    4/441, FIRST FLOOR, MALVIYA NAGAR, JAIPUR - 302017
+                    <br>
+                    <strong>DECLARATION: </strong>
+                    Decalration here
+                </div>
+                <div class="col-sm-7 mt-5">
+                    E. & O.E.
+                    <div><img style="height:30px;" src="../../../assets/assets/logo6.png" alt=""></div>
+                </div>
+                <div class="col-sm-2 mt-5">
+                    ORDERED THROUGH
+                </div>
+                <div class="col-sm-3 mt-5">
+                    <div class="text-center mb-0">S.R. Enterprises</div>
+                </div>
+                <div class="col-sm-12 mt-5 text-center bg-light">
+                    <button class="btn ml-5">Download Invoice <i class="fa fa-download" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template> -->
