@@ -114,7 +114,7 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
     CareerComponent,
     SellerorderComponent,
     RazortestComponent,
-    AdmindashboardComponent
+    AdmindashboardComponent,
   
    
    

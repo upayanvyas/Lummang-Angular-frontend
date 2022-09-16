@@ -53,16 +53,13 @@
                                         (click)="openModal(mymodal, {order:order, modalName:'view'})">View</button>
                                     <button class="btn btn-outline-dark btn-block btn-rounded"
                                         (click)="openModal(invoicemodal, {order:null, modalName:'invoice'})">Invoice</button>
+                                        <button class="btn btn-outline-dark btn-block btn-rounded">Manifesto</button>
+                                        <button class="btn btn-outline-dark btn-block btn-rounded">Label</button>
                                 </td>
                             </tr>
                             <tr *ngIf="orders?.length == 0" colspan="5" class="text-center">No data to display</tr>
                         </tbody>
                     </table>
-                </div>
-                <div class="card-footer">
-                    <a href="shop-banner-sidebar.html" class="btn btn-dark btn-rounded btn-icon-right">Go
-                        Shop<i class="w-icon-long-arrow-right"></i>
-                    </a>
                 </div>
             </div>
         </div>

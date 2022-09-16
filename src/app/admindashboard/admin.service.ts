@@ -19,4 +19,21 @@ export class AdminService {
   getAllOrders(): Observable<any> {
     return this.http.get('http://localhost:4000/api/order/all')
   }
+
+  getAllSellers():Observable<any> {
+    return this.http.get('http://localhost:4000/api/order/sellers')
+  }
+
+  getAllBuyers():Observable<any> {
+    return this.http.get('http://localhost:4000/api/order/customers')
+  }
+
+  getOrdersBySellerId(obj):Observable<any> {
+    return this.http.get(`http://localhost:4000/api/order/seller/${obj.sellerid}/${obj.start_dt}/${obj.end_dt}`)
+  }
+
+  getOrdersByBuyerId(obj):Observable<any> {
+    return this.http.get(`http://localhost:4000/api/order/customer/${obj.customerid}/${obj.start_dt}/${obj.end_dt}`)
+  }
+
 }
